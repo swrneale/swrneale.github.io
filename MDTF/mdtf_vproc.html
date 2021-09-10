@@ -1,9 +1,7 @@
-<title>MDTF Vertical Processe</title>
 
-<font color = "darkgreen" size=+3 ><b> SCAM <br> Diagnostics </b> </font>
+<font color = "darkgreen" size=+2 ><b> ENSO Vertical Processes Diagnostic Package </b> </font>
 
-ENSO Vertical Processes Diagnostic Package
-Last update 09/10/2021
+
 ENSO Vertical Processes (ENSO_VERT_PROC) diagnostic package consists of FOUR levels. With a
 focus on identifying leading processes that determine ENSO-induced global teleconnection,
 particularly the Pacific North American (PNA) pattern, main module of the POD estimates tendencies
@@ -23,6 +21,8 @@ level. For the FOUR levels of diagnostics, selected results are illustrated here
 POD works efficiently if model data contain sufficient number of El Niño or La Nina events.
 Predigested results are available for both El Niño and La Nina composites.
 Version and contact information
+
+
 Version 1.0, 07/06/2021
 PI: Dr. H. Annamalai (IPRC/SOEST University of/ Hawaii; hanna@hawaii.edu)
 Co-PI: Richard Neale (NCAR, Boulder; neale@ucar.edu)
@@ -30,11 +30,16 @@ Current developer: Richard Neale and Jan Hafner (IPRC/SOEST; jhafner@hawaii.edu)
 Open source copyright agreement
 The MDTF framework is distributed under the LGPLv3 license (see LICENSE.txt).
 Functionality
-The current package consists of the following functionalities:
-1. Basic ENSO diagnostics performed by script LEVEL_01.py
-2. Climatological diagnostics by script LEVEL_02.py
-3. Vertical processes tendencies script LEVEL_03.py
-4. Comparison among model development versions performed by script LEVEL_04.py
+<h4>The current package consists of the following functionalities:</h4>
+
+<ol>
+<li> Basic ENSO diagnostics performed by script LEVEL_01.py </li>
+<li> Climatological diagnostics by script LEVEL_02.py </li>
+<li> Vertical processes tendencies script LEVEL_03.py</li>
+<li> Comparison among model development versions performed by script LEVEL_04.py</li>
+<\ol>
+  
+  
 As a module of the MDTF code package, all scripts to perform the four levels can be found here:
 ~/diagnostics/ENSO_VERT_PROC/
 
@@ -46,6 +51,7 @@ This package is coded in Python 3.8.5 and requires the following packages: numpy
 netcdf4.
 The pre-processing and plotting are coded in NCAR Command Language Version 6.5.0.
 Required model output variables and their corresponding units (Rich)
+  
 The following model fields are required as monthly data:
 4-D variables (longitude, latitude, pressure level, time):
 1. zg: HGT geopotential height (m)
@@ -56,9 +62,11 @@ The following model fields are required as monthly data:
 3-D variables (longitude, latitude, time):
 6. pr: Precipitation (k/m 2 /s)
 7. ts: Surface temperature (K)
+
 More details can be found in the README_general.pdf document.
 References
-1. Annamalai, H., R. Neale and J. Hafner: ENSO-induced teleconnection: development of PODs to
+
+ 1. Annamalai, H., R. Neale and J. Hafner: ENSO-induced teleconnection: development of PODs to
 assess Rossby wave sources in climate models (in preparation).
 2. R. Neale and H. Annamalai: Rossby wave sources and ENSO- induced teleconnections in CAM6
 model development versions and associated vertical processes (in preparation).
