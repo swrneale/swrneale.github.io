@@ -3,7 +3,7 @@
 <font color="blue">ENSO Vertical Processes</font>
 </h2>
 <hr>
-ENSO Vertical Processes (ENSO_VERT_PROC) diagnostic package consists of FOUR levels. With a
+ENSO Vertical Processes (ENSO_VERT_PROC) diagnostic package consists of five levels. With a
 focus on identifying leading processes that determine ENSO-induced global teleconnection,
 particularly the Pacific North American (PNA) pattern, main module of the POD estimates tendencies
 in vertical processes (e.g., moisture and temperature) along the equatorial western-central-eastern
@@ -39,36 +39,14 @@ The MDTF framework is distributed under the LGPLv3 license (see LICENSE.txt).
 <h4>The current package consists of the following functionalities:</h4>
 
 <ol>
-<li> Basic ENSO diagnostics performed by script LEVEL_01.py </li>
-<li> Climatological diagnostics by script LEVEL_02.py </li>
-<li> Vertical processes tendencies script LEVEL_03.py</li>
-<li> Comparison among model development versions performed by script LEVEL_04.py</li>
+<li> Climatological diagnostics by script LEVEL_01.py </li>
+<li> Model development processes tendencies script LEVEL_02.py</li>
+<li> AMIP/CMIP processes tendencies script LEVEL_03.py</li>
+<li> Large-ensemble analysis scripts (tendencies/divergence) LEVEL_04.py</li>
+<li> Key relationship scatterplots (among regional divergence and tendency profiles) LEVEL_05.py</li>
 </ol>
 
-As a module of the MDTF code package, all scripts to perform the four levels can be found here:
-~/diagnostics/ENSO_VERT_PROC/
 
-2
-The pre-digested observational data for model validation can be found here:
-~/diagnostics/inputdata/obs_data/ENSO_VERT_PROC/
-Required programming language and libraries
-This package is coded in Python 3.8.5 and requires the following packages: numpy, os, math, xarray,
-netcdf4.
-The pre-processing and plotting are coded in NCAR Command Language Version 6.5.0.
-Required model output variables and their corresponding units (Rich)
-  
-The following model fields are required as monthly data:
-4-D variables (longitude, latitude, pressure level, time):
-1. zg: HGT geopotential height (m)
-2. ua: U wind component [m/s]
-3. va: V wind component [m/s]
-4. ta: Temperature (K)
-5. wap: Vertical velocity (Pa/s)
-3-D variables (longitude, latitude, time):
-6. pr: Precipitation (k/m 2 /s)
-7. ts: Surface temperature (K)
-
-More details can be found in the README_general.pdf document.
 
 <b>References</b>
 
@@ -86,82 +64,4 @@ associated heating, and by association moistening and divergence profiles. While
 precipitation is straightforward, an understanding of the circulation consequences in the tropics, and
 particularly the extra-tropics is not. RICH MORE SPECIFIC POINTS?
 
-3
-More specifically, generation of Rossby wave sources crucially depend on upper-level divergence and
-divergent winds (advective), and vertical mass flux. These upper-tropospheric processes in the deep
-tropics are complex that depend on interactions among multiple parameterizations. The VERT_PROC
-POD developed here will help to address this critical validation gap, by assessing both climatological
-and anomalous processes in the vertical that are relevant to the generation of upper-level divergence
-and divergent winds. This will be particularly important in coupled configuration development, since
-changes to the atmosphere model configuration can lead to complex coupled feedback modifying not
-only the mean climate, but the response during ENSO events. 
-
-<hr>
-Few take home messages to model development include: 
- Climatological heating properties (e.g., top-heavy vs bottom-heavy heating maxima)
- Vertical characteristics of vertical velocity/divergence/convergence maxima (principal Rossby
-wave sources location and intensity)
- Vertical tendency terms of moisture and temperature (INFERENCE)
-
-Level 1 – Basic ENSO diagnostics
-Identify ENSO winters and construct seasonal composite anomalies for relevant variables (e.g., vertical
-profiles of anomalous divergence, vertical velocity, moisture, temperature etc.,) for regions of interest.
-Reference index (e.g., Nino3.4 SST)
- Seasonal averages
-Based on a reference ENSO index (e.g., area-averaged SST anomalies over Nino3.4 region), seasonal
-composites of vertical structures of relevant variables are constructed. Fig. 1 shows composite
-anomalous precipitation (shaded), 200hPa divergence/convergence (contour/hatching) and 200hPa
-divergent wind (vector) for boreal winter (DJF) season during El Niño constructed from GFDL-AM4
-AMIP simulations performed for the period 1980-2014 (Fig. 1a) and ERA-interim (Fig. 1b).
-
-CAM6 El Niño (DJF) ERA-Interim
-
-(a) Divergence (b) Vertical velocity (c) moisture (d) divergence (e) Vertical velocity (f) moisture
-
-Figure 1: El Niño winter (DJF) composites of vertical profiles of (a,d) divergence (units); (b,e)
-vertical velocity (Pa/s); and (c,f) specific humidity. Results shown are area-averages over the
-equatorial western Pacific (…..; RED); central Pacific (…..; BLUE); subtropical North Pacific
-(…..; GREEN). Results shown on the left (a-c) are constructed from AMIP simulation of CAM6
-performed for the period 1980-2014 and results shown on the right (d-f) are from ERA-interim.
-
-4
-More details on Level 1 diagnostics can be found in the README_LEVEL_01.pdf document.
-
-Level 2 – Climatological diagnostics
-Climate models’ climatological or basic state vertical profiles imprint on the simulated anomalous
-structures, and subsequently on ENSO-induced teleconnection. Specifically, models are required to
-accurately represent different convective regimes along the equatorial Pacific (e.g., deep circulation
-with a broad maximum through the mid-troposphere illustrating deep convection prevalence over the
-equatorial central Pacific, and bottom-heavy or shallow circulation associated with shallow convection
-over the eastern equatorial Pacific). Similarly, climatological vertical structures over the subtropical
-North Pacific and equatorial western Pacific/Maritime Continent, regions corresponding to anomalous
-descending limbs of local Hadley and planetary Walker circulations, determine the strength and
-location of anomalous RWS.
-
-(a) Divergence (b) Vertical velocity (c) Moisture (d) Temperature
-
-Figure 2: NCAR-CAM simulated basic state vertical structures of: (a) divergence; (b) vertical velocity;
-(c) specific humidity; and (d) temperature. Results shown are area-averages over the equatorial
-western Pacific (…..); central Pacific (…..); subtropical North Pacific (…..). Results shown are
-constructed from AMIP simulations of CAM5/6 performed for the period 1980-2014.
-
-More details on Level 2 diagnostics can be found in the README_LEVEL_02.pdf document.
-
-Level 3 – Vertical Process Tendencies (for composite ENSO)
-
-Figure 3: Results shown are for composite El Niño winters (DJF) simulated by CAM AMIP
-simulations.
-
-5
-More details on Level 3 diagnostics can be found in the README_LEVEL_03.pdf document.
-Level 4: Comparison among model development versions
-In this POD, we have included a higher level of diagnostics (LEVEL_04) that is only relevant to
-comparison among &quot;model development versions&quot;. A few example plots for CAM5 to CAM6
-development versions (pseudo) are shown. These plots are made to provide a quantification of
-improvements/degradations from previous iterations of model development versions. RICH – insights
-into model parameterizations????
-
-Figure 4:
-
-More details on Level 4 diagnostics can be found in the README_LEVEL_04.pdf document.
 
