@@ -1,0 +1,535 @@
+MDTF ENSO_RWS DIAGNOSTIC LOG
+
+Started logging at 2021-11-23 17:28:40.963660
+git hash/branch: 8067891954c6d726037d534549ea6e541284b4f5 (on ENSO_RWS)
+sys.platform: 'darwin'
+sys.version: '3.7.12 | packaged by conda-forge | (default, Oct 26 2021, 05:57:50) 
+[Clang 11.1.0 ]'
+--------------------------------------------------------------------------------
+
+Log for <#4w4I:CESM2.ENSO_RWS>:
+    DEBUG: Set program for <#4w4I:CESM2.ENSO_RWS> to 'python'.
+    DEBUG: PrecipRateToFluxFunction edit_request on <#4KV2:ENSO_RWS.pr>: caught KeyError("Standard name 'precipitation_rate' not defined in convention 'CMIP'.") when trying to translate 'precipitation_rate'; varlist unaltered.
+    DEBUG: Data request for <#4w4I:CESM2.ENSO_RWS> completed succesfully.
+    INFO: SubprocessRuntimeManager: run <#4w4I:CESM2.ENSO_RWS>.
+    INFO: ### Starting <#4w4I:CESM2.ENSO_RWS>
+    INFO: <#4w4I:CESM2.ENSO_RWS> will run using 'python' from conda env '_MDTF_ENSO_RWS'.
+    
+    Log for variable <#4AMY:ENSO_RWS.zg> (='zg' @ 1mo; succeeded, preprocessed, required)
+        	Name in data source: 'zg' (geopotential_height)
+        DEBUG: Query found <expt_key=('CESM2', '', ''), DataKey(4)> for <#4AMY:ENSO_RWS.zg>
+        DEBUG: 1 expt attr choices for CESM2 from <#4AMY:ENSO_RWS.zg>
+        INFO: Fetching <#4AMY:ENSO_RWS.zg> (='zg' @ 1mo).
+        DEBUG: Fetching DataKey(4).
+        INFO: Preprocessing <#4AMY:ENSO_RWS.zg> (='zg' @ 1mo).
+        DEBUG: Loaded '/Users/rneale/Documents/NCAR/git/throw_away/inputdata/model/CESM2/mon/CESM2.zg.mon.nc'.
+        DEBUG: Read 7935 mb for <#4AMY:ENSO_RWS.zg>.
+        DEBUG: Updating units for 'time' to value 'days since 0001-01-01 00:00:00' from dataset.
+        DEBUG: Updating calendar for 'time' to value 'noleap' from dataset.
+        INFO: No standard_name for 'time_bnds' found in dataset; setting to 'time'.
+        DEBUG: Updating bounds for 'time' to value 'time_bnds' from dataset.
+        WARNING: Received event MetadataEvent("Unexpected units for variable 'plev': 'Pa' (expected 'hPa').").
+        INFO: No standard_name for 'lat_bnds' found in dataset; setting to 'latitude'.
+        DEBUG: Updating bounds for 'lat' to value 'lat_bnds' from dataset.
+        INFO: No standard_name for 'lon_bnds' found in dataset; setting to 'longitude'.
+        DEBUG: Updating bounds for 'lon' to value 'lon_bnds' from dataset.
+        DEBUG: Calling CropDateRangeFunction on <#4AMY:ENSO_RWS.zg>.
+        INFO: Cropped date range of <#4AMY:ENSO_RWS.zg> from '1850-01-15 -- 2014-12-15' to '1950-01-15 -- 2005-12-15'.
+        DEBUG: Calling PrecipRateToFluxFunction on <#4AMY:ENSO_RWS.zg>.
+        DEBUG: Calling ConvertUnitsFunction on <#4AMY:ENSO_RWS.zg>.
+        DEBUG: Source, dest units of 'zg' (geopotential_height) identical (m); no conversion done.
+        DEBUG: Convert units of 'plev' (air_pressure) from 'Pa' to 'hPa'.
+        DEBUG: Source, dest units of 'lat' (latitude) identical (degrees_north); no conversion done.
+        DEBUG: Source, dest units of 'lat_bnds' (latitude) identical (degrees_north); no conversion done.
+        DEBUG: Source, dest units of 'lon' (longitude) identical (degrees_east); no conversion done.
+        DEBUG: Source, dest units of 'lon_bnds' (longitude) identical (degrees_east); no conversion done.
+        INFO: Converted units on <#4AMY:ENSO_RWS.zg>.
+        DEBUG: Calling ExtractLevelFunction on <#4AMY:ENSO_RWS.zg>.
+        DEBUG: Exit ExtractLevelFunction for <#4AMY:ENSO_RWS.zg>: no level requested.
+        DEBUG: Calling RenameVariablesFunction on <#4AMY:ENSO_RWS.zg>.
+        DEBUG: Rename Z axis of <#4AMY:ENSO_RWS.zg> from 'plev' to 'lev'.
+        INFO: Writing 2693 mb to $WK_DIR/ENSO_RWS/mon/CESM2.zg.mon.nc
+        DEBUG: Writing '/Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.zg.mon.nc'.
+        DEBUG: Successful preprocessor exit on <#4AMY:ENSO_RWS.zg> (='zg' @ 1mo).
+        DEBUG: Data request for <#4AMY:ENSO_RWS.zg> completed succesfully.
+    
+    Log for variable <#4CWG:ENSO_RWS.ua> (='ua' @ 1mo; succeeded, preprocessed, required)
+        	Name in data source: 'ua' (eastward_wind)
+        DEBUG: Query found <expt_key=('CESM2', '', ''), DataKey(9)> for <#4CWG:ENSO_RWS.ua>
+        DEBUG: 1 expt attr choices for CESM2 from <#4CWG:ENSO_RWS.ua>
+        INFO: Fetching <#4CWG:ENSO_RWS.ua> (='ua' @ 1mo).
+        DEBUG: Fetching DataKey(9).
+        INFO: Preprocessing <#4CWG:ENSO_RWS.ua> (='ua' @ 1mo).
+        DEBUG: Loaded '/Users/rneale/Documents/NCAR/git/throw_away/inputdata/model/CESM2/mon/CESM2.ua.mon.nc'.
+        DEBUG: Read 7935 mb for <#4CWG:ENSO_RWS.ua>.
+        DEBUG: Updating units for 'time' to value 'days since 0001-01-01 00:00:00' from dataset.
+        DEBUG: Updating calendar for 'time' to value 'noleap' from dataset.
+        INFO: No standard_name for 'time_bnds' found in dataset; setting to 'time'.
+        DEBUG: Updating bounds for 'time' to value 'time_bnds' from dataset.
+        WARNING: Received event MetadataEvent("Unexpected units for variable 'plev': 'Pa' (expected 'hPa').").
+        INFO: No standard_name for 'lat_bnds' found in dataset; setting to 'latitude'.
+        DEBUG: Updating bounds for 'lat' to value 'lat_bnds' from dataset.
+        INFO: No standard_name for 'lon_bnds' found in dataset; setting to 'longitude'.
+        DEBUG: Updating bounds for 'lon' to value 'lon_bnds' from dataset.
+        DEBUG: Calling CropDateRangeFunction on <#4CWG:ENSO_RWS.ua>.
+        INFO: Cropped date range of <#4CWG:ENSO_RWS.ua> from '1850-01-15 -- 2014-12-15' to '1950-01-15 -- 2005-12-15'.
+        DEBUG: Calling PrecipRateToFluxFunction on <#4CWG:ENSO_RWS.ua>.
+        DEBUG: Calling ConvertUnitsFunction on <#4CWG:ENSO_RWS.ua>.
+        DEBUG: Source, dest units of 'ua' (eastward_wind) identical (m s-1); no conversion done.
+        DEBUG: Convert units of 'plev' (air_pressure) from 'Pa' to 'hPa'.
+        DEBUG: Source, dest units of 'lat' (latitude) identical (degrees_north); no conversion done.
+        DEBUG: Source, dest units of 'lat_bnds' (latitude) identical (degrees_north); no conversion done.
+        DEBUG: Source, dest units of 'lon' (longitude) identical (degrees_east); no conversion done.
+        DEBUG: Source, dest units of 'lon_bnds' (longitude) identical (degrees_east); no conversion done.
+        INFO: Converted units on <#4CWG:ENSO_RWS.ua>.
+        DEBUG: Calling ExtractLevelFunction on <#4CWG:ENSO_RWS.ua>.
+        DEBUG: Exit ExtractLevelFunction for <#4CWG:ENSO_RWS.ua>: no level requested.
+        DEBUG: Calling RenameVariablesFunction on <#4CWG:ENSO_RWS.ua>.
+        DEBUG: Rename Z axis of <#4CWG:ENSO_RWS.ua> from 'plev' to 'lev'.
+        INFO: Writing 2693 mb to $WK_DIR/ENSO_RWS/mon/CESM2.ua.mon.nc
+        DEBUG: Writing '/Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.ua.mon.nc'.
+        DEBUG: Successful preprocessor exit on <#4CWG:ENSO_RWS.ua> (='ua' @ 1mo).
+        DEBUG: Data request for <#4CWG:ENSO_RWS.ua> completed succesfully.
+    
+    Log for variable <#4EK0:ENSO_RWS.va> (='va' @ 1mo; succeeded, preprocessed, required)
+        	Name in data source: 'va' (northward_wind)
+        DEBUG: Query found <expt_key=('CESM2', '', ''), DataKey(15)> for <#4EK0:ENSO_RWS.va>
+        DEBUG: 1 expt attr choices for CESM2 from <#4EK0:ENSO_RWS.va>
+        INFO: Fetching <#4EK0:ENSO_RWS.va> (='va' @ 1mo).
+        DEBUG: Fetching DataKey(15).
+        INFO: Preprocessing <#4EK0:ENSO_RWS.va> (='va' @ 1mo).
+        DEBUG: Loaded '/Users/rneale/Documents/NCAR/git/throw_away/inputdata/model/CESM2/mon/CESM2.va.mon.nc'.
+        DEBUG: Read 7935 mb for <#4EK0:ENSO_RWS.va>.
+        DEBUG: Updating units for 'time' to value 'days since 0001-01-01 00:00:00' from dataset.
+        DEBUG: Updating calendar for 'time' to value 'noleap' from dataset.
+        INFO: No standard_name for 'time_bnds' found in dataset; setting to 'time'.
+        DEBUG: Updating bounds for 'time' to value 'time_bnds' from dataset.
+        WARNING: Received event MetadataEvent("Unexpected units for variable 'plev': 'Pa' (expected 'hPa').").
+        INFO: No standard_name for 'lat_bnds' found in dataset; setting to 'latitude'.
+        DEBUG: Updating bounds for 'lat' to value 'lat_bnds' from dataset.
+        INFO: No standard_name for 'lon_bnds' found in dataset; setting to 'longitude'.
+        DEBUG: Updating bounds for 'lon' to value 'lon_bnds' from dataset.
+        DEBUG: Calling CropDateRangeFunction on <#4EK0:ENSO_RWS.va>.
+        INFO: Cropped date range of <#4EK0:ENSO_RWS.va> from '1850-01-15 -- 2014-12-15' to '1950-01-15 -- 2005-12-15'.
+        DEBUG: Calling PrecipRateToFluxFunction on <#4EK0:ENSO_RWS.va>.
+        DEBUG: Calling ConvertUnitsFunction on <#4EK0:ENSO_RWS.va>.
+        DEBUG: Source, dest units of 'va' (northward_wind) identical (m s-1); no conversion done.
+        DEBUG: Convert units of 'plev' (air_pressure) from 'Pa' to 'hPa'.
+        DEBUG: Source, dest units of 'lat' (latitude) identical (degrees_north); no conversion done.
+        DEBUG: Source, dest units of 'lat_bnds' (latitude) identical (degrees_north); no conversion done.
+        DEBUG: Source, dest units of 'lon' (longitude) identical (degrees_east); no conversion done.
+        DEBUG: Source, dest units of 'lon_bnds' (longitude) identical (degrees_east); no conversion done.
+        INFO: Converted units on <#4EK0:ENSO_RWS.va>.
+        DEBUG: Calling ExtractLevelFunction on <#4EK0:ENSO_RWS.va>.
+        DEBUG: Exit ExtractLevelFunction for <#4EK0:ENSO_RWS.va>: no level requested.
+        DEBUG: Calling RenameVariablesFunction on <#4EK0:ENSO_RWS.va>.
+        DEBUG: Rename Z axis of <#4EK0:ENSO_RWS.va> from 'plev' to 'lev'.
+        INFO: Writing 2693 mb to $WK_DIR/ENSO_RWS/mon/CESM2.va.mon.nc
+        DEBUG: Writing '/Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.va.mon.nc'.
+        DEBUG: Successful preprocessor exit on <#4EK0:ENSO_RWS.va> (='va' @ 1mo).
+        DEBUG: Data request for <#4EK0:ENSO_RWS.va> completed succesfully.
+    
+    Log for variable <#4GLW:ENSO_RWS.ta> (='ta' @ 1mo; succeeded, preprocessed, required)
+        	Name in data source: 'ta' (air_temperature)
+        DEBUG: Query found <expt_key=('CESM2', '', ''), DataKey(7)> for <#4GLW:ENSO_RWS.ta>
+        DEBUG: 1 expt attr choices for CESM2 from <#4GLW:ENSO_RWS.ta>
+        INFO: Fetching <#4GLW:ENSO_RWS.ta> (='ta' @ 1mo).
+        DEBUG: Fetching DataKey(7).
+        INFO: Preprocessing <#4GLW:ENSO_RWS.ta> (='ta' @ 1mo).
+        DEBUG: Loaded '/Users/rneale/Documents/NCAR/git/throw_away/inputdata/model/CESM2/mon/CESM2.ta.mon.nc'.
+        DEBUG: Read 7935 mb for <#4GLW:ENSO_RWS.ta>.
+        DEBUG: Updating units for 'time' to value 'days since 0001-01-01 00:00:00' from dataset.
+        DEBUG: Updating calendar for 'time' to value 'noleap' from dataset.
+        INFO: No standard_name for 'time_bnds' found in dataset; setting to 'time'.
+        DEBUG: Updating bounds for 'time' to value 'time_bnds' from dataset.
+        WARNING: Received event MetadataEvent("Unexpected units for variable 'plev': 'Pa' (expected 'hPa').").
+        INFO: No standard_name for 'lat_bnds' found in dataset; setting to 'latitude'.
+        DEBUG: Updating bounds for 'lat' to value 'lat_bnds' from dataset.
+        INFO: No standard_name for 'lon_bnds' found in dataset; setting to 'longitude'.
+        DEBUG: Updating bounds for 'lon' to value 'lon_bnds' from dataset.
+        DEBUG: Calling CropDateRangeFunction on <#4GLW:ENSO_RWS.ta>.
+        INFO: Cropped date range of <#4GLW:ENSO_RWS.ta> from '1850-01-15 -- 2014-12-15' to '1950-01-15 -- 2005-12-15'.
+        DEBUG: Calling PrecipRateToFluxFunction on <#4GLW:ENSO_RWS.ta>.
+        DEBUG: Calling ConvertUnitsFunction on <#4GLW:ENSO_RWS.ta>.
+        DEBUG: Source, dest units of 'ta' (air_temperature) identical (K); no conversion done.
+        DEBUG: Convert units of 'plev' (air_pressure) from 'Pa' to 'hPa'.
+        DEBUG: Source, dest units of 'lat' (latitude) identical (degrees_north); no conversion done.
+        DEBUG: Source, dest units of 'lat_bnds' (latitude) identical (degrees_north); no conversion done.
+        DEBUG: Source, dest units of 'lon' (longitude) identical (degrees_east); no conversion done.
+        DEBUG: Source, dest units of 'lon_bnds' (longitude) identical (degrees_east); no conversion done.
+        INFO: Converted units on <#4GLW:ENSO_RWS.ta>.
+        DEBUG: Calling ExtractLevelFunction on <#4GLW:ENSO_RWS.ta>.
+        DEBUG: Exit ExtractLevelFunction for <#4GLW:ENSO_RWS.ta>: no level requested.
+        DEBUG: Calling RenameVariablesFunction on <#4GLW:ENSO_RWS.ta>.
+        DEBUG: Rename Z axis of <#4GLW:ENSO_RWS.ta> from 'plev' to 'lev'.
+        INFO: Writing 2693 mb to $WK_DIR/ENSO_RWS/mon/CESM2.ta.mon.nc
+        DEBUG: Writing '/Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.ta.mon.nc'.
+        DEBUG: Successful preprocessor exit on <#4GLW:ENSO_RWS.ta> (='ta' @ 1mo).
+        DEBUG: Data request for <#4GLW:ENSO_RWS.ta> completed succesfully.
+    
+    Log for variable <#4IzS:ENSO_RWS.wap> (='wap' @ 1mo; succeeded, preprocessed, required)
+        	Name in data source: 'wap' (lagrangian_tendency_of_air_pressure)
+        DEBUG: Query found <expt_key=('CESM2', '', ''), DataKey(12)> for <#4IzS:ENSO_RWS.wap>
+        DEBUG: 1 expt attr choices for CESM2 from <#4IzS:ENSO_RWS.wap>
+        INFO: Fetching <#4IzS:ENSO_RWS.wap> (='wap' @ 1mo).
+        DEBUG: Fetching DataKey(12).
+        INFO: Preprocessing <#4IzS:ENSO_RWS.wap> (='wap' @ 1mo).
+        DEBUG: Loaded '/Users/rneale/Documents/NCAR/git/throw_away/inputdata/model/CESM2/mon/CESM2.wap.mon.nc'.
+        DEBUG: Read 7935 mb for <#4IzS:ENSO_RWS.wap>.
+        DEBUG: Updating units for 'time' to value 'days since 0001-01-01 00:00:00' from dataset.
+        DEBUG: Updating calendar for 'time' to value 'noleap' from dataset.
+        INFO: No standard_name for 'time_bnds' found in dataset; setting to 'time'.
+        DEBUG: Updating bounds for 'time' to value 'time_bnds' from dataset.
+        WARNING: Received event MetadataEvent("Unexpected units for variable 'plev': 'Pa' (expected 'hPa').").
+        INFO: No standard_name for 'lat_bnds' found in dataset; setting to 'latitude'.
+        DEBUG: Updating bounds for 'lat' to value 'lat_bnds' from dataset.
+        INFO: No standard_name for 'lon_bnds' found in dataset; setting to 'longitude'.
+        DEBUG: Updating bounds for 'lon' to value 'lon_bnds' from dataset.
+        DEBUG: Calling CropDateRangeFunction on <#4IzS:ENSO_RWS.wap>.
+        INFO: Cropped date range of <#4IzS:ENSO_RWS.wap> from '1850-01-15 -- 2014-12-15' to '1950-01-15 -- 2005-12-15'.
+        DEBUG: Calling PrecipRateToFluxFunction on <#4IzS:ENSO_RWS.wap>.
+        DEBUG: Calling ConvertUnitsFunction on <#4IzS:ENSO_RWS.wap>.
+        DEBUG: Source, dest units of 'wap' (lagrangian_tendency_of_air_pressure) identical (Pa s-1); no conversion done.
+        DEBUG: Convert units of 'plev' (air_pressure) from 'Pa' to 'hPa'.
+        DEBUG: Source, dest units of 'lat' (latitude) identical (degrees_north); no conversion done.
+        DEBUG: Source, dest units of 'lat_bnds' (latitude) identical (degrees_north); no conversion done.
+        DEBUG: Source, dest units of 'lon' (longitude) identical (degrees_east); no conversion done.
+        DEBUG: Source, dest units of 'lon_bnds' (longitude) identical (degrees_east); no conversion done.
+        INFO: Converted units on <#4IzS:ENSO_RWS.wap>.
+        DEBUG: Calling ExtractLevelFunction on <#4IzS:ENSO_RWS.wap>.
+        DEBUG: Exit ExtractLevelFunction for <#4IzS:ENSO_RWS.wap>: no level requested.
+        DEBUG: Calling RenameVariablesFunction on <#4IzS:ENSO_RWS.wap>.
+        DEBUG: Rename Z axis of <#4IzS:ENSO_RWS.wap> from 'plev' to 'lev'.
+        INFO: Writing 2693 mb to $WK_DIR/ENSO_RWS/mon/CESM2.wap.mon.nc
+        DEBUG: Writing '/Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.wap.mon.nc'.
+        DEBUG: Successful preprocessor exit on <#4IzS:ENSO_RWS.wap> (='wap' @ 1mo).
+        DEBUG: Data request for <#4IzS:ENSO_RWS.wap> completed succesfully.
+    
+    Log for variable <#4KV2:ENSO_RWS.pr> (='pr' @ 1mo; succeeded, preprocessed, required)
+        	Name in data source: 'pr' (precipitation_flux)
+        DEBUG: Query found <expt_key=('CESM2', '', ''), DataKey(6)> for <#4KV2:ENSO_RWS.pr>
+        DEBUG: 1 expt attr choices for CESM2 from <#4KV2:ENSO_RWS.pr>
+        INFO: Fetching <#4KV2:ENSO_RWS.pr> (='pr' @ 1mo).
+        DEBUG: Fetching DataKey(6).
+        INFO: Preprocessing <#4KV2:ENSO_RWS.pr> (='pr' @ 1mo).
+        DEBUG: Loaded '/Users/rneale/Documents/NCAR/git/throw_away/inputdata/model/CESM2/mon/CESM2.pr.mon.nc'.
+        DEBUG: Read 417 mb for <#4KV2:ENSO_RWS.pr>.
+        DEBUG: Updating units for 'time' to value 'days since 0001-01-01 00:00:00' from dataset.
+        DEBUG: Updating calendar for 'time' to value 'noleap' from dataset.
+        INFO: No standard_name for 'time_bnds' found in dataset; setting to 'time'.
+        DEBUG: Updating bounds for 'time' to value 'time_bnds' from dataset.
+        INFO: No standard_name for 'lat_bnds' found in dataset; setting to 'latitude'.
+        DEBUG: Updating bounds for 'lat' to value 'lat_bnds' from dataset.
+        INFO: No standard_name for 'lon_bnds' found in dataset; setting to 'longitude'.
+        DEBUG: Updating bounds for 'lon' to value 'lon_bnds' from dataset.
+        DEBUG: Calling CropDateRangeFunction on <#4KV2:ENSO_RWS.pr>.
+        INFO: Cropped date range of <#4KV2:ENSO_RWS.pr> from '1850-01-15 -- 2014-12-15' to '1950-01-15 -- 2005-12-15'.
+        DEBUG: Calling PrecipRateToFluxFunction on <#4KV2:ENSO_RWS.pr>.
+        DEBUG: Calling ConvertUnitsFunction on <#4KV2:ENSO_RWS.pr>.
+        DEBUG: Source, dest units of 'pr' (precipitation_flux) identical (kg m-2 s-1); no conversion done.
+        DEBUG: Source, dest units of 'lat' (latitude) identical (degrees_north); no conversion done.
+        DEBUG: Source, dest units of 'lat_bnds' (latitude) identical (degrees_north); no conversion done.
+        DEBUG: Source, dest units of 'lon' (longitude) identical (degrees_east); no conversion done.
+        DEBUG: Source, dest units of 'lon_bnds' (longitude) identical (degrees_east); no conversion done.
+        INFO: Converted units on <#4KV2:ENSO_RWS.pr>.
+        DEBUG: Calling ExtractLevelFunction on <#4KV2:ENSO_RWS.pr>.
+        DEBUG: Exit ExtractLevelFunction for <#4KV2:ENSO_RWS.pr>: no level requested.
+        DEBUG: Calling RenameVariablesFunction on <#4KV2:ENSO_RWS.pr>.
+        INFO: Writing 141 mb to $WK_DIR/ENSO_RWS/mon/CESM2.pr.mon.nc
+        DEBUG: Writing '/Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.pr.mon.nc'.
+        DEBUG: Successful preprocessor exit on <#4KV2:ENSO_RWS.pr> (='pr' @ 1mo).
+        DEBUG: Data request for <#4KV2:ENSO_RWS.pr> completed succesfully.
+    
+    Log for variable <#4MX0:ENSO_RWS.ts> (='ts' @ 1mo; succeeded, preprocessed, required)
+        	Name in data source: 'ts' (surface_temperature)
+        DEBUG: Query found <expt_key=('CESM2', '', ''), DataKey(14)> for <#4MX0:ENSO_RWS.ts>
+        DEBUG: 1 expt attr choices for CESM2 from <#4MX0:ENSO_RWS.ts>
+        INFO: Fetching <#4MX0:ENSO_RWS.ts> (='ts' @ 1mo).
+        DEBUG: Fetching DataKey(14).
+        INFO: Preprocessing <#4MX0:ENSO_RWS.ts> (='ts' @ 1mo).
+        DEBUG: Loaded '/Users/rneale/Documents/NCAR/git/throw_away/inputdata/model/CESM2/mon/CESM2.ts.mon.nc'.
+        DEBUG: Read 417 mb for <#4MX0:ENSO_RWS.ts>.
+        DEBUG: Updating units for 'time' to value 'days since 0001-01-01 00:00:00' from dataset.
+        DEBUG: Updating calendar for 'time' to value 'noleap' from dataset.
+        INFO: No standard_name for 'time_bnds' found in dataset; setting to 'time'.
+        DEBUG: Updating bounds for 'time' to value 'time_bnds' from dataset.
+        INFO: No standard_name for 'lat_bnds' found in dataset; setting to 'latitude'.
+        DEBUG: Updating bounds for 'lat' to value 'lat_bnds' from dataset.
+        INFO: No standard_name for 'lon_bnds' found in dataset; setting to 'longitude'.
+        DEBUG: Updating bounds for 'lon' to value 'lon_bnds' from dataset.
+        DEBUG: Calling CropDateRangeFunction on <#4MX0:ENSO_RWS.ts>.
+        INFO: Cropped date range of <#4MX0:ENSO_RWS.ts> from '1850-01-15 -- 2014-12-15' to '1950-01-15 -- 2005-12-15'.
+        DEBUG: Calling PrecipRateToFluxFunction on <#4MX0:ENSO_RWS.ts>.
+        DEBUG: Calling ConvertUnitsFunction on <#4MX0:ENSO_RWS.ts>.
+        DEBUG: Source, dest units of 'ts' (surface_temperature) identical (K); no conversion done.
+        DEBUG: Source, dest units of 'lat' (latitude) identical (degrees_north); no conversion done.
+        DEBUG: Source, dest units of 'lat_bnds' (latitude) identical (degrees_north); no conversion done.
+        DEBUG: Source, dest units of 'lon' (longitude) identical (degrees_east); no conversion done.
+        DEBUG: Source, dest units of 'lon_bnds' (longitude) identical (degrees_east); no conversion done.
+        INFO: Converted units on <#4MX0:ENSO_RWS.ts>.
+        DEBUG: Calling ExtractLevelFunction on <#4MX0:ENSO_RWS.ts>.
+        DEBUG: Exit ExtractLevelFunction for <#4MX0:ENSO_RWS.ts>: no level requested.
+        DEBUG: Calling RenameVariablesFunction on <#4MX0:ENSO_RWS.ts>.
+        INFO: Writing 141 mb to $WK_DIR/ENSO_RWS/mon/CESM2.ts.mon.nc
+        DEBUG: Writing '/Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.ts.mon.nc'.
+        DEBUG: Successful preprocessor exit on <#4MX0:ENSO_RWS.ts> (='ts' @ 1mo).
+        DEBUG: Data request for <#4MX0:ENSO_RWS.ts> completed succesfully.
+
+### Shell env vars: 
+  CASENAME: CESM2
+  DATADIR: /Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS
+  FIRSTYR: 1950
+  LASTYR: 2005
+  MDTF_NC_FORMAT: NETCDF4_CLASSIC
+  MPLBACKEND: Agg
+  OBS_DATA: /Users/rneale/Documents/NCAR/git/throw_away/inputdata/obs_data/ENSO_RWS
+  POD_HOME: /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS
+  PR_FILE: /Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.pr.mon.nc
+  RGB: /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/shared/rgb
+  TA_FILE: /Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.ta.mon.nc
+  TS_FILE: /Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.ts.mon.nc
+  UA_FILE: /Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.ua.mon.nc
+  VA_FILE: /Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.va.mon.nc
+  WAP_FILE: /Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.wap.mon.nc
+  WK_DIR: /Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS
+  ZG_FILE: /Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.zg.mon.nc
+  date_int_offset: 0
+  lat_bnds: lat_bnds
+  lat_coord: lat
+  lev_coord: lev
+  lon_bnds: lon_bnds
+  lon_coord: lon
+  pr_var: pr
+  ta_var: ta
+  time_bnds: time_bnds
+  time_coord: time
+  ts_var: ts
+  ua_var: ua
+  va_var: va
+  wap_var: wap
+  zg_var: zg
+
+### Start execution of <#4w4I:CESM2.ENSO_RWS>
+--------------------------------------------------------------------------------
+_CONDA_EXE=/Users/rneale/miniconda3//bin/conda
+_CONDA_ROOT=/Users/rneale/miniconda3/
+Found program ncl.
+Found contributed.ncl in /Users/rneale/miniconda3/envs/_MDTF_ENSO_RWS/lib/ncarg/nclscripts.
+Found gsn_code.ncl in /Users/rneale/miniconda3/envs/_MDTF_ENSO_RWS/lib/ncarg/nclscripts.
+Found gsn_csm.ncl in /Users/rneale/miniconda3/envs/_MDTF_ENSO_RWS/lib/ncarg/nclscripts.
+Found shea_util.ncl in /Users/rneale/miniconda3/envs/_MDTF_ENSO_RWS/lib/ncarg/nclscripts.
+Found calendar_decode2.ncl in /Users/rneale/miniconda3/envs/_MDTF_ENSO_RWS/lib/ncarg/nclscripts.
+L49 Found /Users/rneale/Documents/NCAR/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/ELNINO/zg.nc
+L49 Found /Users/rneale/Documents/NCAR/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/zg.nc
+L49 Found /Users/rneale/Documents/NCAR/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/ELNINO/ua.nc
+L49 Found /Users/rneale/Documents/NCAR/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/ua.nc
+L49 Found /Users/rneale/Documents/NCAR/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/ELNINO/va.nc
+L49 Found /Users/rneale/Documents/NCAR/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/va.nc
+L49 Found /Users/rneale/Documents/NCAR/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/ELNINO/ta.nc
+L49 Found /Users/rneale/Documents/NCAR/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/ta.nc
+L49 Found /Users/rneale/Documents/NCAR/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/ELNINO/wap.nc
+L49 Found /Users/rneale/Documents/NCAR/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/wap.nc
+L49 Found /Users/rneale/Documents/NCAR/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/ELNINO/pr.nc
+L49 Found /Users/rneale/Documents/NCAR/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/pr.nc
+L49 Found /Users/rneale/Documents/NCAR/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/ELNINO/ts.nc
+L49 Found /Users/rneale/Documents/NCAR/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/ts.nc
+L49 Found /Users/rneale/Documents/NCAR/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/LANINA/zg.nc
+L49 Found /Users/rneale/Documents/NCAR/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/zg.nc
+L49 Found /Users/rneale/Documents/NCAR/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/LANINA/ua.nc
+L49 Found /Users/rneale/Documents/NCAR/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/ua.nc
+L49 Found /Users/rneale/Documents/NCAR/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/LANINA/va.nc
+L49 Found /Users/rneale/Documents/NCAR/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/va.nc
+L49 Found /Users/rneale/Documents/NCAR/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/LANINA/ta.nc
+L49 Found /Users/rneale/Documents/NCAR/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/ta.nc
+L49 Found /Users/rneale/Documents/NCAR/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/LANINA/wap.nc
+L49 Found /Users/rneale/Documents/NCAR/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/wap.nc
+L49 Found /Users/rneale/Documents/NCAR/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/LANINA/pr.nc
+L49 Found /Users/rneale/Documents/NCAR/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/pr.nc
+L49 Found /Users/rneale/Documents/NCAR/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/LANINA/ts.nc
+L49 Found /Users/rneale/Documents/NCAR/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/ts.nc
+ =========================================================
+ ==========================================================
+ ==== All Pre-digested Observational files  found ======== 
+ =========================================================
+ ==========================================================
+ ==========================================================
+/Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/shared/util.py:check_required_dirs:  starting
+	 looking for required dir: /Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/obs
+ envvar /Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/obs not defined. Setting to self.
+Found /Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/obs
+	 looking for required dir: /Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/obs/PS
+ envvar /Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/obs/PS not defined. Setting to self.
+Found /Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/obs/PS
+/Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS
+/Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/shared/util.py:check_required_dirs:  starting
+	 looking for required dir: /Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/model
+Found /Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/model
+	 looking for required dir: /Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/model/PS
+Found /Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/model/PS
+	 looking for required dir: /Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/model/netCDF/ELNINO
+/Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/model/netCDF/ELNINO = /Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/model/netCDF/ELNINO created
+	 looking for required dir: /Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/model/netCDF/LANINA
+/Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/model/netCDF/LANINA = /Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/model/netCDF/LANINA created
+ =========================================================
+ ==========================================================
+===========  All model input files found =============== 
+ =========================================================
+ ==========================================================
+=========== LEVEL_01.py =======================================
+   Start of LEVEL_01 calculations  2021-11-23 17:28
+===============================================================
+NCL routine /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_01/NCL_DATA/get_composites.ncl:
+	b'(0)\tstarted Tue Nov 23 17:28:45 MST 2021\n(0)\tThe number of  El Nino events is : 15\n(0)\tThe code will proceed  with this number of El Nino events\n(0)\tThe number of  El Nino events is : 17\n(0)\tThe code will proceed  with this number of La Nina events\n(0)\t finished variable zg Tue Nov 23 17:29:28 MST 2021\n(0)\t finished variable ua Tue Nov 23 17:29:54 MST 2021\n(0)\t finished variable va Tue Nov 23 17:30:22 MST 2021\n(0)\t finished variable ta Tue Nov 23 17:30:49 MST 2021\n(0)\t finished variable wap Tue Nov 23 17:31:30 MST 2021\n(0)\t finished variable pr Tue Nov 23 17:31:31 MST 2021\n(0)\t finished variable ts Tue Nov 23 17:31:33 MST 2021\nwarning:Dimension (1) has not been defined\n\rwarning:Dimension (2) has not been defined\n\rwarning:Dimension (3) has not been defined\n\r(0)\t finished variable dT Tue Nov 23 17:32:46 MST 2021\n'
+NCL routine /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_01/NCL_DATA/Q1_routine.ncl:
+	b'(0)\tpot_temp: WARNING:  units of temperature not recognized\n(0)\tpot_temp: WARNING:  units of temperature not recognized\n'
+ Plotting routines start 2021-11-23 17:32
+NCL routine /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_01/NCL/plot_RR_composite.ncl:
+	b'fatal:Number of subscripts do not match number of dimensions of variable,(3) Subscripts used, (2) Subscripts expected\n\rfatal:["Execute.c":8637]:Execute: Error occurred at or near line 134 in file /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_01/NCL/plot_RR_composite.ncl\n\n\r'
+NCL routine /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_01/NCL/plot_SST_composite.ncl:
+	b'fatal:Number of subscripts do not match number of dimensions of variable,(3) Subscripts used, (2) Subscripts expected\n\rfatal:["Execute.c":8637]:Execute: Error occurred at or near line 132 in file /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_01/NCL/plot_SST_composite.ncl\n\n\r'
+NCL routine /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_01/NCL/plot_HGT_composite.ncl:
+	b''
+NCL routine /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_01/NCL/plot_Q1_composite.ncl:
+	b''
+NCL routine /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_01/NCL/plot_stream_fnc_composite.ncl:
+	b''
+NCL routine /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_01/NCL/plot_divergent_wind_composite.ncl:
+	b''
+NCL routine /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_01/NCL/plot_divergence_composite.ncl:
+	b''
+NCL routine /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_01/NCL/plot_RR_adiv_aUVdiv_overlay.ncl:
+	b'fatal:Number of subscripts do not match number of dimensions of variable,(3) Subscripts used, (2) Subscripts expected\n\rfatal:["Execute.c":8637]:Execute: Error occurred at or near line 280 in file /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_01/NCL/plot_RR_adiv_aUVdiv_overlay.ncl\n\n\r'
+NCL routine /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_01/NCL/plot_Hgt_Vanom_overlay.ncl:
+	b''
+NCL routine /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_01/NCL/plot_RR_adiv_aUVdiv_overlay.ncl:
+	b'fatal:Number of subscripts do not match number of dimensions of variable,(3) Subscripts used, (2) Subscripts expected\n\rfatal:["Execute.c":8637]:Execute: Error occurred at or near line 280 in file /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_01/NCL/plot_RR_adiv_aUVdiv_overlay.ncl\n\n\r'
+NCL routine /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_01/NCL/plot_RWS_aUVdiv_cvort_overlay.ncl:
+	b''
+NCL routine /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_01/NCL/plot_RWS_betastar_overlay.ncl:
+	b''
+NCL routine /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_01/NCL/plot_RWS_Uclima_overlay.ncl:
+	b''
+NCL routine /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_01/NCL/plot_RWS_wavenumber_overlay.ncl:
+	b''
+ LEVEL_01 completed 2021-11-23 17:35
+=========== LEVEL_02.py =======================================
+   Start of LEVEL_02 calculations  2021-11-23 17:35
+===============================================================
+NCL routine /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_02/NCL/plot_betastar_clima.ncl:
+	b''
+NCL routine /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_02/NCL/plot_divergence_clima.ncl:
+	b''
+NCL routine /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_02/NCL/plot_divergent_wind_clima.ncl:
+	b''
+NCL routine /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_02/NCL/plot_stream_fnc_clima.ncl:
+	b''
+NCL routine /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_02/NCL/plot_U_wind_clima.ncl:
+	b''
+NCL routine /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_02/NCL/plot_wave_number_clima.ncl:
+	b''
+ LEVEL_02 completed 2021-11-23 17:35
+=========== LEVEL_03.py =======================================
+   Start of LEVEL_03 calculations  2021-11-23 17:35
+===============================================================
+NCL routine /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_03/NCL/plot_RWS_composite.ncl:
+	b''
+ LEVEL_03 completed 2021-11-23 17:36
+=========== LEVEL_04.py =======================================
+   Start of LEVEL_04 calculations  2021-11-23 17:36
+===============================================================
+NCL routine /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_04/NCL/get_PNA_index.ncl:
+	b''
+NCL routine /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_04/NCL/scatter_plot_01.ncl:
+	b''
+NCL routine /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_04/NCL/scatter_plot_02.ncl:
+	b''
+NCL routine /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_04/NCL/scatter_plot_03.ncl:
+	b''
+NCL routine /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_04/NCL/scatter_plot_04.ncl:
+	b''
+NCL routine /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_04/NCL/scatter_plot_05.ncl:
+	b''
+NCL routine /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_04/NCL/scatter_plot_06.ncl:
+	b''
+NCL routine /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_04/NCL/scatter_plot_07.ncl:
+	b''
+NCL routine /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_04/NCL/scatter_plot_08.ncl:
+	b''
+NCL routine /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_04/NCL/scatter_plot_09.ncl:
+	b''
+NCL routine /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_04/NCL/scatter_plot_10.ncl:
+	b''
+ LEVEL_04 completed 2021-11-23 17:38
+Starting ENSO_RWS.py 
+=================================================================
+ Scripts is going to calculate ENSO composites of simple variables    
+=================================================================
+=================================================================
+ General information is in README_general.docx/README_general.pdf files under
+  ~/diagnostics/ENSO_RWS                                             
+=================================================================
+=================================================================
+ The LEVEL_01 routine requires the following monthly variables in the input:  
+  Zg - geopotential height [m]        
+  U  - U wind [m/s], V - V wind [m/s] 
+  T  - temperature [K]                
+  OMEGA  - vertical velocity [Pa/s]   
+  TS   - skin surface temperature [K] 
+  PR   - precipitation rate [kg/m2/s] 
+=================================================================
+=================================================================
+ More detailed information regarding the LEVEL_01 module is in  
+ README_LEVEL_01.docx/README_LEVEL_01.pdf files under ~/diagnostics/ENSO_RWS/LEVEL_01/
+=================================================================
+=================================================================
+ Starting LEVEL_01 module 2021-11-23 17:28
+        Finished check_input_files_OBS.py
+        Finished get_directories_OBS.py
+        Finished get_directories.py
+        Finished check_input_files.py
+        Finished LEVEL_01.py
+ Finished LEVEL_01 module                         
+=================================================================
+=================================================================
+                         LEVEL_01 FINISHED                     
+=================================================================
+=================================================================
+ Scripts is going to calculate RWS terms based on results from LEVEL_01 
+=================================================================
+ Starting LEVEL_02 module 2021-11-23 17:35
+=================================================================
+        Finished LEVEL_02.py
+ Finished LEVEL_02 module                         
+=================================================================
+=================================================================
+ Scripts is going to calculate expanded set of RWS terms based on results from LEVEL_01 
+=================================================================
+ Starting LEVEL_04/05 module 2021-11-23 17:35
+=================================================================
+        Finished LEVEL_03.py
+ Finished LEVEL_03 module                         
+=================================================================
+========================== END =================================
+=================================================================
+ Scripts is going to calculate expanded set of RWS terms based on results from LEVEL_01 
+=================================================================
+=================================================================
+        Finished LEVEL_04.py
+ Finished LEVEL_04 module                         
+=================================================================
+========================== END =================================
+ RWS POD finished 2021-11-23 17:38
+========= POD END =============================================
+--------------------------------------------------------------------------------
+<#4w4I:CESM2.ENSO_RWS> was terminated or exited abnormally.
+Log for <#4w4I:CESM2.ENSO_RWS>:
+    *** caught exception (#1):
+    None: None
+    
+    INFO: 	Running ENSO_RWS.py for <#4w4I:CESM2.ENSO_RWS>.
+    INFO: <#4w4I:CESM2.ENSO_RWS> was terminated or exited abnormally.
+    INFO: Checking linked output files for <#4w4I:CESM2.ENSO_RWS>.
+    ERROR: Missing '$WK_DIR/ENSO_RWS/obs/ts_LANINA.png'.
+    ERROR: Missing '$WK_DIR/ENSO_RWS/obs/pr_LANINA.png'.
+    ERROR: Missing '$WK_DIR/ENSO_RWS/obs/RR_adiv_aUVdiv_LANINA_200.png'.
+    ERROR: Deactivated <#4w4I:CESM2.ENSO_RWS> due to MDTFFileNotFoundError("[Errno 2] No such file or directory: 'Missing 3 files.'").
