@@ -1,0 +1,49 @@
+{
+  "site": "local",
+  "input_file": "src/default_tests.jsonc",
+  "CASE_ROOT_DIR": null,
+  "OBS_DATA_ROOT": "../inputdata/obs_data",
+  "flag_root_dir": null,
+  "WORKING_DIR": "../wkdir_mse_work",
+  "OUTPUT_DIR": "../wkdir_mse_out",
+  "convention": "CMIP",
+  "large_file": false,
+  "strict": false,
+  "disable_preprocessor": false,
+  "overwrite_file_metadata": false,
+  "data_manager": "Local_File",
+  "sample_dataset": "",
+  "CASENAME": null,
+  "FIRSTYR": null,
+  "LASTYR": null,
+  "environment_manager": "Conda",
+  "conda_root": "/glade/work/rneale/miniconda3/",
+  "conda_env_root": "/glade/work/rneale/miniconda3/envs/",
+  "runtime_manager": "subprocess",
+  "output_manager": "html",
+  "save_ps": true,
+  "save_nc": false,
+  "save_non_nc": false,
+  "make_variab_tar": true,
+  "overwrite": true,
+  "verbose": 1,
+  "quiet": 0,
+  "file_transfer_timeout": 300,
+  "keep_temp": false,
+  "test_mode": false,
+  "dry_run": false,
+  "MODEL_DATA_ROOT": "../inputdata/model/",
+  "case_list": {
+    "CESM2": {
+      "CASENAME": "CESM2",
+      "model": "CESM2",
+      "convention": "CMIP",
+      "FIRSTYR": 1950,
+      "LASTYR": 2005,
+      "pod_list": [
+        "ENSO_MSE"
+      ],
+      "experiment": ""
+    }
+  }
+}
