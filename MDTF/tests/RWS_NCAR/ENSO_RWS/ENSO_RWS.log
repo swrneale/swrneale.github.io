@@ -1,0 +1,529 @@
+MDTF ENSO_RWS DIAGNOSTIC LOG
+
+Started logging at 2021-11-23 17:01:01.983741
+git hash/branch: 8067891954c6d726037d534549ea6e541284b4f5 (on ENSO_RWS)
+sys.platform: 'linux'
+sys.version: '3.7.12 | packaged by conda-forge | (default, Oct 26 2021, 06:08:53) 
+[GCC 9.4.0]'
+--------------------------------------------------------------------------------
+
+Log for <#9YT1:CESM2.ENSO_RWS>:
+    DEBUG: Set program for <#9YT1:CESM2.ENSO_RWS> to 'python'.
+    DEBUG: PrecipRateToFluxFunction edit_request on <#9Zdd:ENSO_RWS.pr>: caught KeyError("Standard name 'precipitation_rate' not defined in convention 'CMIP'.") when trying to translate 'precipitation_rate'; varlist unaltered.
+    DEBUG: Data request for <#9YT1:CESM2.ENSO_RWS> completed succesfully.
+    INFO: SubprocessRuntimeManager: run <#9YT1:CESM2.ENSO_RWS>.
+    INFO: ### Starting <#9YT1:CESM2.ENSO_RWS>
+    INFO: <#9YT1:CESM2.ENSO_RWS> will run using 'python' from conda env '_MDTF_ENSO_RWS'.
+    
+    Log for variable <#9YXr:ENSO_RWS.zg> (='zg' @ 1mo; succeeded, preprocessed, required)
+        	Name in data source: 'zg' (geopotential_height)
+        DEBUG: Query found <expt_key=('CESM2', '', ''), DataKey(12)> for <#9YXr:ENSO_RWS.zg>
+        DEBUG: 1 expt attr choices for CESM2 from <#9YXr:ENSO_RWS.zg>
+        INFO: Fetching <#9YXr:ENSO_RWS.zg> (='zg' @ 1mo).
+        DEBUG: Fetching DataKey(12).
+        INFO: Preprocessing <#9YXr:ENSO_RWS.zg> (='zg' @ 1mo).
+        DEBUG: Loaded '/glade/work/rneale/git/throw_away/inputdata/model/CESM2/mon/CESM2.zg.mon.nc'.
+        DEBUG: Read 7935 mb for <#9YXr:ENSO_RWS.zg>.
+        DEBUG: Updating units for 'time' to value 'days since 0001-01-01 00:00:00' from dataset.
+        DEBUG: Updating calendar for 'time' to value 'noleap' from dataset.
+        INFO: No standard_name for 'time_bnds' found in dataset; setting to 'time'.
+        DEBUG: Updating bounds for 'time' to value 'time_bnds' from dataset.
+        WARNING: Received event MetadataEvent("Unexpected units for variable 'plev': 'Pa' (expected 'hPa').").
+        INFO: No standard_name for 'lat_bnds' found in dataset; setting to 'latitude'.
+        DEBUG: Updating bounds for 'lat' to value 'lat_bnds' from dataset.
+        INFO: No standard_name for 'lon_bnds' found in dataset; setting to 'longitude'.
+        DEBUG: Updating bounds for 'lon' to value 'lon_bnds' from dataset.
+        DEBUG: Calling CropDateRangeFunction on <#9YXr:ENSO_RWS.zg>.
+        INFO: Cropped date range of <#9YXr:ENSO_RWS.zg> from '1850-01-15 -- 2014-12-15' to '1950-01-15 -- 2005-12-15'.
+        DEBUG: Calling PrecipRateToFluxFunction on <#9YXr:ENSO_RWS.zg>.
+        DEBUG: Calling ConvertUnitsFunction on <#9YXr:ENSO_RWS.zg>.
+        DEBUG: Source, dest units of 'zg' (geopotential_height) identical (m); no conversion done.
+        DEBUG: Convert units of 'plev' (air_pressure) from 'Pa' to 'hPa'.
+        DEBUG: Source, dest units of 'lat' (latitude) identical (degrees_north); no conversion done.
+        DEBUG: Source, dest units of 'lat_bnds' (latitude) identical (degrees_north); no conversion done.
+        DEBUG: Source, dest units of 'lon' (longitude) identical (degrees_east); no conversion done.
+        DEBUG: Source, dest units of 'lon_bnds' (longitude) identical (degrees_east); no conversion done.
+        INFO: Converted units on <#9YXr:ENSO_RWS.zg>.
+        DEBUG: Calling ExtractLevelFunction on <#9YXr:ENSO_RWS.zg>.
+        DEBUG: Exit ExtractLevelFunction for <#9YXr:ENSO_RWS.zg>: no level requested.
+        DEBUG: Calling RenameVariablesFunction on <#9YXr:ENSO_RWS.zg>.
+        DEBUG: Rename Z axis of <#9YXr:ENSO_RWS.zg> from 'plev' to 'lev'.
+        INFO: Writing 2693 mb to $WK_DIR/ENSO_RWS/mon/CESM2.zg.mon.nc
+        DEBUG: Writing '/glade/work/rneale/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.zg.mon.nc'.
+        DEBUG: Successful preprocessor exit on <#9YXr:ENSO_RWS.zg> (='zg' @ 1mo).
+        DEBUG: Data request for <#9YXr:ENSO_RWS.zg> completed succesfully.
+    
+    Log for variable <#9Z01:ENSO_RWS.ua> (='ua' @ 1mo; succeeded, preprocessed, required)
+        	Name in data source: 'ua' (eastward_wind)
+        DEBUG: Query found <expt_key=('CESM2', '', ''), DataKey(0)> for <#9Z01:ENSO_RWS.ua>
+        DEBUG: 1 expt attr choices for CESM2 from <#9Z01:ENSO_RWS.ua>
+        INFO: Fetching <#9Z01:ENSO_RWS.ua> (='ua' @ 1mo).
+        DEBUG: Fetching DataKey(0).
+        INFO: Preprocessing <#9Z01:ENSO_RWS.ua> (='ua' @ 1mo).
+        DEBUG: Loaded '/glade/work/rneale/git/throw_away/inputdata/model/CESM2/mon/CESM2.ua.mon.nc'.
+        DEBUG: Read 7935 mb for <#9Z01:ENSO_RWS.ua>.
+        DEBUG: Updating units for 'time' to value 'days since 0001-01-01 00:00:00' from dataset.
+        DEBUG: Updating calendar for 'time' to value 'noleap' from dataset.
+        INFO: No standard_name for 'time_bnds' found in dataset; setting to 'time'.
+        DEBUG: Updating bounds for 'time' to value 'time_bnds' from dataset.
+        WARNING: Received event MetadataEvent("Unexpected units for variable 'plev': 'Pa' (expected 'hPa').").
+        INFO: No standard_name for 'lat_bnds' found in dataset; setting to 'latitude'.
+        DEBUG: Updating bounds for 'lat' to value 'lat_bnds' from dataset.
+        INFO: No standard_name for 'lon_bnds' found in dataset; setting to 'longitude'.
+        DEBUG: Updating bounds for 'lon' to value 'lon_bnds' from dataset.
+        DEBUG: Calling CropDateRangeFunction on <#9Z01:ENSO_RWS.ua>.
+        INFO: Cropped date range of <#9Z01:ENSO_RWS.ua> from '1850-01-15 -- 2014-12-15' to '1950-01-15 -- 2005-12-15'.
+        DEBUG: Calling PrecipRateToFluxFunction on <#9Z01:ENSO_RWS.ua>.
+        DEBUG: Calling ConvertUnitsFunction on <#9Z01:ENSO_RWS.ua>.
+        DEBUG: Source, dest units of 'ua' (eastward_wind) identical (m s-1); no conversion done.
+        DEBUG: Convert units of 'plev' (air_pressure) from 'Pa' to 'hPa'.
+        DEBUG: Source, dest units of 'lat' (latitude) identical (degrees_north); no conversion done.
+        DEBUG: Source, dest units of 'lat_bnds' (latitude) identical (degrees_north); no conversion done.
+        DEBUG: Source, dest units of 'lon' (longitude) identical (degrees_east); no conversion done.
+        DEBUG: Source, dest units of 'lon_bnds' (longitude) identical (degrees_east); no conversion done.
+        INFO: Converted units on <#9Z01:ENSO_RWS.ua>.
+        DEBUG: Calling ExtractLevelFunction on <#9Z01:ENSO_RWS.ua>.
+        DEBUG: Exit ExtractLevelFunction for <#9Z01:ENSO_RWS.ua>: no level requested.
+        DEBUG: Calling RenameVariablesFunction on <#9Z01:ENSO_RWS.ua>.
+        DEBUG: Rename Z axis of <#9Z01:ENSO_RWS.ua> from 'plev' to 'lev'.
+        INFO: Writing 2693 mb to $WK_DIR/ENSO_RWS/mon/CESM2.ua.mon.nc
+        DEBUG: Writing '/glade/work/rneale/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.ua.mon.nc'.
+        DEBUG: Successful preprocessor exit on <#9Z01:ENSO_RWS.ua> (='ua' @ 1mo).
+        DEBUG: Data request for <#9Z01:ENSO_RWS.ua> completed succesfully.
+    
+    Log for variable <#9Z2C:ENSO_RWS.va> (='va' @ 1mo; succeeded, preprocessed, required)
+        	Name in data source: 'va' (northward_wind)
+        DEBUG: Query found <expt_key=('CESM2', '', ''), DataKey(8)> for <#9Z2C:ENSO_RWS.va>
+        DEBUG: 1 expt attr choices for CESM2 from <#9Z2C:ENSO_RWS.va>
+        INFO: Fetching <#9Z2C:ENSO_RWS.va> (='va' @ 1mo).
+        DEBUG: Fetching DataKey(8).
+        INFO: Preprocessing <#9Z2C:ENSO_RWS.va> (='va' @ 1mo).
+        DEBUG: Loaded '/glade/work/rneale/git/throw_away/inputdata/model/CESM2/mon/CESM2.va.mon.nc'.
+        DEBUG: Read 7935 mb for <#9Z2C:ENSO_RWS.va>.
+        DEBUG: Updating units for 'time' to value 'days since 0001-01-01 00:00:00' from dataset.
+        DEBUG: Updating calendar for 'time' to value 'noleap' from dataset.
+        INFO: No standard_name for 'time_bnds' found in dataset; setting to 'time'.
+        DEBUG: Updating bounds for 'time' to value 'time_bnds' from dataset.
+        WARNING: Received event MetadataEvent("Unexpected units for variable 'plev': 'Pa' (expected 'hPa').").
+        INFO: No standard_name for 'lat_bnds' found in dataset; setting to 'latitude'.
+        DEBUG: Updating bounds for 'lat' to value 'lat_bnds' from dataset.
+        INFO: No standard_name for 'lon_bnds' found in dataset; setting to 'longitude'.
+        DEBUG: Updating bounds for 'lon' to value 'lon_bnds' from dataset.
+        DEBUG: Calling CropDateRangeFunction on <#9Z2C:ENSO_RWS.va>.
+        INFO: Cropped date range of <#9Z2C:ENSO_RWS.va> from '1850-01-15 -- 2014-12-15' to '1950-01-15 -- 2005-12-15'.
+        DEBUG: Calling PrecipRateToFluxFunction on <#9Z2C:ENSO_RWS.va>.
+        DEBUG: Calling ConvertUnitsFunction on <#9Z2C:ENSO_RWS.va>.
+        DEBUG: Source, dest units of 'va' (northward_wind) identical (m s-1); no conversion done.
+        DEBUG: Convert units of 'plev' (air_pressure) from 'Pa' to 'hPa'.
+        DEBUG: Source, dest units of 'lat' (latitude) identical (degrees_north); no conversion done.
+        DEBUG: Source, dest units of 'lat_bnds' (latitude) identical (degrees_north); no conversion done.
+        DEBUG: Source, dest units of 'lon' (longitude) identical (degrees_east); no conversion done.
+        DEBUG: Source, dest units of 'lon_bnds' (longitude) identical (degrees_east); no conversion done.
+        INFO: Converted units on <#9Z2C:ENSO_RWS.va>.
+        DEBUG: Calling ExtractLevelFunction on <#9Z2C:ENSO_RWS.va>.
+        DEBUG: Exit ExtractLevelFunction for <#9Z2C:ENSO_RWS.va>: no level requested.
+        DEBUG: Calling RenameVariablesFunction on <#9Z2C:ENSO_RWS.va>.
+        DEBUG: Rename Z axis of <#9Z2C:ENSO_RWS.va> from 'plev' to 'lev'.
+        INFO: Writing 2693 mb to $WK_DIR/ENSO_RWS/mon/CESM2.va.mon.nc
+        DEBUG: Writing '/glade/work/rneale/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.va.mon.nc'.
+        DEBUG: Successful preprocessor exit on <#9Z2C:ENSO_RWS.va> (='va' @ 1mo).
+        DEBUG: Data request for <#9Z2C:ENSO_RWS.va> completed succesfully.
+    
+    Log for variable <#9Z55:ENSO_RWS.ta> (='ta' @ 1mo; succeeded, preprocessed, required)
+        	Name in data source: 'ta' (air_temperature)
+        DEBUG: Query found <expt_key=('CESM2', '', ''), DataKey(1)> for <#9Z55:ENSO_RWS.ta>
+        DEBUG: 1 expt attr choices for CESM2 from <#9Z55:ENSO_RWS.ta>
+        INFO: Fetching <#9Z55:ENSO_RWS.ta> (='ta' @ 1mo).
+        DEBUG: Fetching DataKey(1).
+        INFO: Preprocessing <#9Z55:ENSO_RWS.ta> (='ta' @ 1mo).
+        DEBUG: Loaded '/glade/work/rneale/git/throw_away/inputdata/model/CESM2/mon/CESM2.ta.mon.nc'.
+        DEBUG: Read 7935 mb for <#9Z55:ENSO_RWS.ta>.
+        DEBUG: Updating units for 'time' to value 'days since 0001-01-01 00:00:00' from dataset.
+        DEBUG: Updating calendar for 'time' to value 'noleap' from dataset.
+        INFO: No standard_name for 'time_bnds' found in dataset; setting to 'time'.
+        DEBUG: Updating bounds for 'time' to value 'time_bnds' from dataset.
+        WARNING: Received event MetadataEvent("Unexpected units for variable 'plev': 'Pa' (expected 'hPa').").
+        INFO: No standard_name for 'lat_bnds' found in dataset; setting to 'latitude'.
+        DEBUG: Updating bounds for 'lat' to value 'lat_bnds' from dataset.
+        INFO: No standard_name for 'lon_bnds' found in dataset; setting to 'longitude'.
+        DEBUG: Updating bounds for 'lon' to value 'lon_bnds' from dataset.
+        DEBUG: Calling CropDateRangeFunction on <#9Z55:ENSO_RWS.ta>.
+        INFO: Cropped date range of <#9Z55:ENSO_RWS.ta> from '1850-01-15 -- 2014-12-15' to '1950-01-15 -- 2005-12-15'.
+        DEBUG: Calling PrecipRateToFluxFunction on <#9Z55:ENSO_RWS.ta>.
+        DEBUG: Calling ConvertUnitsFunction on <#9Z55:ENSO_RWS.ta>.
+        DEBUG: Source, dest units of 'ta' (air_temperature) identical (K); no conversion done.
+        DEBUG: Convert units of 'plev' (air_pressure) from 'Pa' to 'hPa'.
+        DEBUG: Source, dest units of 'lat' (latitude) identical (degrees_north); no conversion done.
+        DEBUG: Source, dest units of 'lat_bnds' (latitude) identical (degrees_north); no conversion done.
+        DEBUG: Source, dest units of 'lon' (longitude) identical (degrees_east); no conversion done.
+        DEBUG: Source, dest units of 'lon_bnds' (longitude) identical (degrees_east); no conversion done.
+        INFO: Converted units on <#9Z55:ENSO_RWS.ta>.
+        DEBUG: Calling ExtractLevelFunction on <#9Z55:ENSO_RWS.ta>.
+        DEBUG: Exit ExtractLevelFunction for <#9Z55:ENSO_RWS.ta>: no level requested.
+        DEBUG: Calling RenameVariablesFunction on <#9Z55:ENSO_RWS.ta>.
+        DEBUG: Rename Z axis of <#9Z55:ENSO_RWS.ta> from 'plev' to 'lev'.
+        INFO: Writing 2693 mb to $WK_DIR/ENSO_RWS/mon/CESM2.ta.mon.nc
+        DEBUG: Writing '/glade/work/rneale/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.ta.mon.nc'.
+        DEBUG: Successful preprocessor exit on <#9Z55:ENSO_RWS.ta> (='ta' @ 1mo).
+        DEBUG: Data request for <#9Z55:ENSO_RWS.ta> completed succesfully.
+    
+    Log for variable <#9Z7u:ENSO_RWS.wap> (='wap' @ 1mo; succeeded, preprocessed, required)
+        	Name in data source: 'wap' (lagrangian_tendency_of_air_pressure)
+        DEBUG: Query found <expt_key=('CESM2', '', ''), DataKey(6)> for <#9Z7u:ENSO_RWS.wap>
+        DEBUG: 1 expt attr choices for CESM2 from <#9Z7u:ENSO_RWS.wap>
+        INFO: Fetching <#9Z7u:ENSO_RWS.wap> (='wap' @ 1mo).
+        DEBUG: Fetching DataKey(6).
+        INFO: Preprocessing <#9Z7u:ENSO_RWS.wap> (='wap' @ 1mo).
+        DEBUG: Loaded '/glade/work/rneale/git/throw_away/inputdata/model/CESM2/mon/CESM2.wap.mon.nc'.
+        DEBUG: Read 7935 mb for <#9Z7u:ENSO_RWS.wap>.
+        DEBUG: Updating units for 'time' to value 'days since 0001-01-01 00:00:00' from dataset.
+        DEBUG: Updating calendar for 'time' to value 'noleap' from dataset.
+        INFO: No standard_name for 'time_bnds' found in dataset; setting to 'time'.
+        DEBUG: Updating bounds for 'time' to value 'time_bnds' from dataset.
+        WARNING: Received event MetadataEvent("Unexpected units for variable 'plev': 'Pa' (expected 'hPa').").
+        INFO: No standard_name for 'lat_bnds' found in dataset; setting to 'latitude'.
+        DEBUG: Updating bounds for 'lat' to value 'lat_bnds' from dataset.
+        INFO: No standard_name for 'lon_bnds' found in dataset; setting to 'longitude'.
+        DEBUG: Updating bounds for 'lon' to value 'lon_bnds' from dataset.
+        DEBUG: Calling CropDateRangeFunction on <#9Z7u:ENSO_RWS.wap>.
+        INFO: Cropped date range of <#9Z7u:ENSO_RWS.wap> from '1850-01-15 -- 2014-12-15' to '1950-01-15 -- 2005-12-15'.
+        DEBUG: Calling PrecipRateToFluxFunction on <#9Z7u:ENSO_RWS.wap>.
+        DEBUG: Calling ConvertUnitsFunction on <#9Z7u:ENSO_RWS.wap>.
+        DEBUG: Source, dest units of 'wap' (lagrangian_tendency_of_air_pressure) identical (Pa s-1); no conversion done.
+        DEBUG: Convert units of 'plev' (air_pressure) from 'Pa' to 'hPa'.
+        DEBUG: Source, dest units of 'lat' (latitude) identical (degrees_north); no conversion done.
+        DEBUG: Source, dest units of 'lat_bnds' (latitude) identical (degrees_north); no conversion done.
+        DEBUG: Source, dest units of 'lon' (longitude) identical (degrees_east); no conversion done.
+        DEBUG: Source, dest units of 'lon_bnds' (longitude) identical (degrees_east); no conversion done.
+        INFO: Converted units on <#9Z7u:ENSO_RWS.wap>.
+        DEBUG: Calling ExtractLevelFunction on <#9Z7u:ENSO_RWS.wap>.
+        DEBUG: Exit ExtractLevelFunction for <#9Z7u:ENSO_RWS.wap>: no level requested.
+        DEBUG: Calling RenameVariablesFunction on <#9Z7u:ENSO_RWS.wap>.
+        DEBUG: Rename Z axis of <#9Z7u:ENSO_RWS.wap> from 'plev' to 'lev'.
+        INFO: Writing 2693 mb to $WK_DIR/ENSO_RWS/mon/CESM2.wap.mon.nc
+        DEBUG: Writing '/glade/work/rneale/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.wap.mon.nc'.
+        DEBUG: Successful preprocessor exit on <#9Z7u:ENSO_RWS.wap> (='wap' @ 1mo).
+        DEBUG: Data request for <#9Z7u:ENSO_RWS.wap> completed succesfully.
+    
+    Log for variable <#9Zdd:ENSO_RWS.pr> (='pr' @ 1mo; succeeded, preprocessed, required)
+        	Name in data source: 'pr' (precipitation_flux)
+        DEBUG: Query found <expt_key=('CESM2', '', ''), DataKey(15)> for <#9Zdd:ENSO_RWS.pr>
+        DEBUG: 1 expt attr choices for CESM2 from <#9Zdd:ENSO_RWS.pr>
+        INFO: Fetching <#9Zdd:ENSO_RWS.pr> (='pr' @ 1mo).
+        DEBUG: Fetching DataKey(15).
+        INFO: Preprocessing <#9Zdd:ENSO_RWS.pr> (='pr' @ 1mo).
+        DEBUG: Loaded '/glade/work/rneale/git/throw_away/inputdata/model/CESM2/mon/CESM2.pr.mon.nc'.
+        DEBUG: Read 417 mb for <#9Zdd:ENSO_RWS.pr>.
+        DEBUG: Updating units for 'time' to value 'days since 0001-01-01 00:00:00' from dataset.
+        DEBUG: Updating calendar for 'time' to value 'noleap' from dataset.
+        INFO: No standard_name for 'time_bnds' found in dataset; setting to 'time'.
+        DEBUG: Updating bounds for 'time' to value 'time_bnds' from dataset.
+        INFO: No standard_name for 'lat_bnds' found in dataset; setting to 'latitude'.
+        DEBUG: Updating bounds for 'lat' to value 'lat_bnds' from dataset.
+        INFO: No standard_name for 'lon_bnds' found in dataset; setting to 'longitude'.
+        DEBUG: Updating bounds for 'lon' to value 'lon_bnds' from dataset.
+        DEBUG: Calling CropDateRangeFunction on <#9Zdd:ENSO_RWS.pr>.
+        INFO: Cropped date range of <#9Zdd:ENSO_RWS.pr> from '1850-01-15 -- 2014-12-15' to '1950-01-15 -- 2005-12-15'.
+        DEBUG: Calling PrecipRateToFluxFunction on <#9Zdd:ENSO_RWS.pr>.
+        DEBUG: Calling ConvertUnitsFunction on <#9Zdd:ENSO_RWS.pr>.
+        DEBUG: Source, dest units of 'pr' (precipitation_flux) identical (kg m-2 s-1); no conversion done.
+        DEBUG: Source, dest units of 'lat' (latitude) identical (degrees_north); no conversion done.
+        DEBUG: Source, dest units of 'lat_bnds' (latitude) identical (degrees_north); no conversion done.
+        DEBUG: Source, dest units of 'lon' (longitude) identical (degrees_east); no conversion done.
+        DEBUG: Source, dest units of 'lon_bnds' (longitude) identical (degrees_east); no conversion done.
+        INFO: Converted units on <#9Zdd:ENSO_RWS.pr>.
+        DEBUG: Calling ExtractLevelFunction on <#9Zdd:ENSO_RWS.pr>.
+        DEBUG: Exit ExtractLevelFunction for <#9Zdd:ENSO_RWS.pr>: no level requested.
+        DEBUG: Calling RenameVariablesFunction on <#9Zdd:ENSO_RWS.pr>.
+        INFO: Writing 141 mb to $WK_DIR/ENSO_RWS/mon/CESM2.pr.mon.nc
+        DEBUG: Writing '/glade/work/rneale/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.pr.mon.nc'.
+        DEBUG: Successful preprocessor exit on <#9Zdd:ENSO_RWS.pr> (='pr' @ 1mo).
+        DEBUG: Data request for <#9Zdd:ENSO_RWS.pr> completed succesfully.
+    
+    Log for variable <#9Zfj:ENSO_RWS.ts> (='ts' @ 1mo; succeeded, preprocessed, required)
+        	Name in data source: 'ts' (surface_temperature)
+        DEBUG: Query found <expt_key=('CESM2', '', ''), DataKey(4)> for <#9Zfj:ENSO_RWS.ts>
+        DEBUG: 1 expt attr choices for CESM2 from <#9Zfj:ENSO_RWS.ts>
+        INFO: Fetching <#9Zfj:ENSO_RWS.ts> (='ts' @ 1mo).
+        DEBUG: Fetching DataKey(4).
+        INFO: Preprocessing <#9Zfj:ENSO_RWS.ts> (='ts' @ 1mo).
+        DEBUG: Loaded '/glade/work/rneale/git/throw_away/inputdata/model/CESM2/mon/CESM2.ts.mon.nc'.
+        DEBUG: Read 417 mb for <#9Zfj:ENSO_RWS.ts>.
+        DEBUG: Updating units for 'time' to value 'days since 0001-01-01 00:00:00' from dataset.
+        DEBUG: Updating calendar for 'time' to value 'noleap' from dataset.
+        INFO: No standard_name for 'time_bnds' found in dataset; setting to 'time'.
+        DEBUG: Updating bounds for 'time' to value 'time_bnds' from dataset.
+        INFO: No standard_name for 'lat_bnds' found in dataset; setting to 'latitude'.
+        DEBUG: Updating bounds for 'lat' to value 'lat_bnds' from dataset.
+        INFO: No standard_name for 'lon_bnds' found in dataset; setting to 'longitude'.
+        DEBUG: Updating bounds for 'lon' to value 'lon_bnds' from dataset.
+        DEBUG: Calling CropDateRangeFunction on <#9Zfj:ENSO_RWS.ts>.
+        INFO: Cropped date range of <#9Zfj:ENSO_RWS.ts> from '1850-01-15 -- 2014-12-15' to '1950-01-15 -- 2005-12-15'.
+        DEBUG: Calling PrecipRateToFluxFunction on <#9Zfj:ENSO_RWS.ts>.
+        DEBUG: Calling ConvertUnitsFunction on <#9Zfj:ENSO_RWS.ts>.
+        DEBUG: Source, dest units of 'ts' (surface_temperature) identical (K); no conversion done.
+        DEBUG: Source, dest units of 'lat' (latitude) identical (degrees_north); no conversion done.
+        DEBUG: Source, dest units of 'lat_bnds' (latitude) identical (degrees_north); no conversion done.
+        DEBUG: Source, dest units of 'lon' (longitude) identical (degrees_east); no conversion done.
+        DEBUG: Source, dest units of 'lon_bnds' (longitude) identical (degrees_east); no conversion done.
+        INFO: Converted units on <#9Zfj:ENSO_RWS.ts>.
+        DEBUG: Calling ExtractLevelFunction on <#9Zfj:ENSO_RWS.ts>.
+        DEBUG: Exit ExtractLevelFunction for <#9Zfj:ENSO_RWS.ts>: no level requested.
+        DEBUG: Calling RenameVariablesFunction on <#9Zfj:ENSO_RWS.ts>.
+        INFO: Writing 141 mb to $WK_DIR/ENSO_RWS/mon/CESM2.ts.mon.nc
+        DEBUG: Writing '/glade/work/rneale/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.ts.mon.nc'.
+        DEBUG: Successful preprocessor exit on <#9Zfj:ENSO_RWS.ts> (='ts' @ 1mo).
+        DEBUG: Data request for <#9Zfj:ENSO_RWS.ts> completed succesfully.
+
+### Shell env vars: 
+  CASENAME: CESM2
+  DATADIR: /glade/work/rneale/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS
+  FIRSTYR: 1950
+  LASTYR: 2005
+  MDTF_NC_FORMAT: NETCDF4_CLASSIC
+  MPLBACKEND: Agg
+  OBS_DATA: /glade/work/rneale/git/throw_away/inputdata/obs_data/ENSO_RWS
+  POD_HOME: /glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS
+  PR_FILE: /glade/work/rneale/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.pr.mon.nc
+  RGB: /glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/shared/rgb
+  TA_FILE: /glade/work/rneale/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.ta.mon.nc
+  TS_FILE: /glade/work/rneale/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.ts.mon.nc
+  UA_FILE: /glade/work/rneale/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.ua.mon.nc
+  VA_FILE: /glade/work/rneale/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.va.mon.nc
+  WAP_FILE: /glade/work/rneale/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.wap.mon.nc
+  WK_DIR: /glade/work/rneale/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS
+  ZG_FILE: /glade/work/rneale/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.zg.mon.nc
+  date_int_offset: 0
+  lat_bnds: lat_bnds
+  lat_coord: lat
+  lev_coord: lev
+  lon_bnds: lon_bnds
+  lon_coord: lon
+  pr_var: pr
+  ta_var: ta
+  time_bnds: time_bnds
+  time_coord: time
+  ts_var: ts
+  ua_var: ua
+  va_var: va
+  wap_var: wap
+  zg_var: zg
+
+### Start execution of <#9YT1:CESM2.ENSO_RWS>
+--------------------------------------------------------------------------------
+_CONDA_EXE=/glade/work/rneale/miniconda3//bin/conda
+_CONDA_ROOT=/glade/work/rneale/miniconda3/
+Found program ncl.
+Found contributed.ncl in /glade/work/rneale/miniconda3/envs/_MDTF_ENSO_RWS/lib/ncarg/nclscripts.
+Found gsn_code.ncl in /glade/work/rneale/miniconda3/envs/_MDTF_ENSO_RWS/lib/ncarg/nclscripts.
+Found gsn_csm.ncl in /glade/work/rneale/miniconda3/envs/_MDTF_ENSO_RWS/lib/ncarg/nclscripts.
+Found shea_util.ncl in /glade/work/rneale/miniconda3/envs/_MDTF_ENSO_RWS/lib/ncarg/nclscripts.
+Found calendar_decode2.ncl in /glade/work/rneale/miniconda3/envs/_MDTF_ENSO_RWS/lib/ncarg/nclscripts.
+L49 Found /glade/work/rneale/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/ELNINO/zg.nc
+L49 Found /glade/work/rneale/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/zg.nc
+L49 Found /glade/work/rneale/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/ELNINO/ua.nc
+L49 Found /glade/work/rneale/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/ua.nc
+L49 Found /glade/work/rneale/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/ELNINO/va.nc
+L49 Found /glade/work/rneale/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/va.nc
+L49 Found /glade/work/rneale/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/ELNINO/ta.nc
+L49 Found /glade/work/rneale/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/ta.nc
+L49 Found /glade/work/rneale/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/ELNINO/wap.nc
+L49 Found /glade/work/rneale/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/wap.nc
+L49 Found /glade/work/rneale/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/ELNINO/pr.nc
+L49 Found /glade/work/rneale/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/pr.nc
+L49 Found /glade/work/rneale/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/ELNINO/ts.nc
+L49 Found /glade/work/rneale/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/ts.nc
+L49 Found /glade/work/rneale/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/LANINA/zg.nc
+L49 Found /glade/work/rneale/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/zg.nc
+L49 Found /glade/work/rneale/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/LANINA/ua.nc
+L49 Found /glade/work/rneale/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/ua.nc
+L49 Found /glade/work/rneale/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/LANINA/va.nc
+L49 Found /glade/work/rneale/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/va.nc
+L49 Found /glade/work/rneale/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/LANINA/ta.nc
+L49 Found /glade/work/rneale/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/ta.nc
+L49 Found /glade/work/rneale/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/LANINA/wap.nc
+L49 Found /glade/work/rneale/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/wap.nc
+L49 Found /glade/work/rneale/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/LANINA/pr.nc
+L49 Found /glade/work/rneale/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/pr.nc
+L49 Found /glade/work/rneale/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/LANINA/ts.nc
+L49 Found /glade/work/rneale/git/throw_away/inputdata/obs_data/ENSO_RWS/DATA/netCDF/ts.nc
+ =========================================================
+ ==========================================================
+ ==== All Pre-digested Observational files  found ======== 
+ =========================================================
+ ==========================================================
+ ==========================================================
+/glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/shared/util.py:check_required_dirs:  starting
+	 looking for required dir: /glade/work/rneale/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/obs
+ envvar /glade/work/rneale/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/obs not defined. Setting to self.
+Found /glade/work/rneale/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/obs
+	 looking for required dir: /glade/work/rneale/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/obs/PS
+ envvar /glade/work/rneale/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/obs/PS not defined. Setting to self.
+Found /glade/work/rneale/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/obs/PS
+/glade/work/rneale/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS
+/glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/shared/util.py:check_required_dirs:  starting
+	 looking for required dir: /glade/work/rneale/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/model
+Found /glade/work/rneale/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/model
+	 looking for required dir: /glade/work/rneale/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/model/PS
+Found /glade/work/rneale/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/model/PS
+	 looking for required dir: /glade/work/rneale/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/model/netCDF/ELNINO
+/glade/work/rneale/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/model/netCDF/ELNINO = /glade/work/rneale/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/model/netCDF/ELNINO created
+	 looking for required dir: /glade/work/rneale/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/model/netCDF/LANINA
+/glade/work/rneale/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/model/netCDF/LANINA = /glade/work/rneale/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/model/netCDF/LANINA created
+ =========================================================
+ ==========================================================
+===========  All model input files found =============== 
+ =========================================================
+ ==========================================================
+=========== LEVEL_01.py =======================================
+   Start of LEVEL_01 calculations  2021-11-23 17:01
+===============================================================
+NCL routine /glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_01/NCL_DATA/get_composites.ncl:
+	b'(0)\tstarted Tue Nov 23 17:01:15 MST 2021\n(0)\tThe number of  El Nino events is : 15\n(0)\tThe code will proceed  with this number of El Nino events\n(0)\tThe number of  El Nino events is : 17\n(0)\tThe code will proceed  with this number of La Nina events\n(0)\t finished variable zg Tue Nov 23 17:01:37 MST 2021\n(0)\t finished variable ua Tue Nov 23 17:01:58 MST 2021\n(0)\t finished variable va Tue Nov 23 17:02:20 MST 2021\n(0)\t finished variable ta Tue Nov 23 17:02:43 MST 2021\n(0)\t finished variable wap Tue Nov 23 17:03:04 MST 2021\n(0)\t finished variable pr Tue Nov 23 17:03:05 MST 2021\n(0)\t finished variable ts Tue Nov 23 17:03:06 MST 2021\nwarning:Dimension (1) has not been defined\n\rwarning:Dimension (2) has not been defined\n\rwarning:Dimension (3) has not been defined\n\r(0)\t finished variable dT Tue Nov 23 17:03:44 MST 2021\n'
+NCL routine /glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_01/NCL_DATA/Q1_routine.ncl:
+	b'(0)\tpot_temp: WARNING:  units of temperature not recognized\n(0)\tpot_temp: WARNING:  units of temperature not recognized\n'
+ Plotting routines start 2021-11-23 17:03
+NCL routine /glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_01/NCL/plot_RR_composite.ncl:
+	b''
+NCL routine /glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_01/NCL/plot_SST_composite.ncl:
+	b''
+NCL routine /glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_01/NCL/plot_HGT_composite.ncl:
+	b''
+NCL routine /glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_01/NCL/plot_Q1_composite.ncl:
+	b''
+NCL routine /glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_01/NCL/plot_stream_fnc_composite.ncl:
+	b''
+NCL routine /glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_01/NCL/plot_divergent_wind_composite.ncl:
+	b''
+NCL routine /glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_01/NCL/plot_divergence_composite.ncl:
+	b''
+NCL routine /glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_01/NCL/plot_RR_adiv_aUVdiv_overlay.ncl:
+	b''
+NCL routine /glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_01/NCL/plot_Hgt_Vanom_overlay.ncl:
+	b''
+NCL routine /glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_01/NCL/plot_RR_adiv_aUVdiv_overlay.ncl:
+	b''
+NCL routine /glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_01/NCL/plot_RWS_aUVdiv_cvort_overlay.ncl:
+	b''
+NCL routine /glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_01/NCL/plot_RWS_betastar_overlay.ncl:
+	b''
+NCL routine /glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_01/NCL/plot_RWS_Uclima_overlay.ncl:
+	b''
+NCL routine /glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_01/NCL/plot_RWS_wavenumber_overlay.ncl:
+	b''
+ LEVEL_01 completed 2021-11-23 17:06
+=========== LEVEL_02.py =======================================
+   Start of LEVEL_02 calculations  2021-11-23 17:06
+===============================================================
+NCL routine /glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_02/NCL/plot_betastar_clima.ncl:
+	b''
+NCL routine /glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_02/NCL/plot_divergence_clima.ncl:
+	b''
+NCL routine /glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_02/NCL/plot_divergent_wind_clima.ncl:
+	b''
+NCL routine /glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_02/NCL/plot_stream_fnc_clima.ncl:
+	b''
+NCL routine /glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_02/NCL/plot_U_wind_clima.ncl:
+	b''
+NCL routine /glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_02/NCL/plot_wave_number_clima.ncl:
+	b''
+ LEVEL_02 completed 2021-11-23 17:07
+=========== LEVEL_03.py =======================================
+   Start of LEVEL_03 calculations  2021-11-23 17:07
+===============================================================
+NCL routine /glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_03/NCL/plot_RWS_composite.ncl:
+	b''
+ LEVEL_03 completed 2021-11-23 17:07
+=========== LEVEL_04.py =======================================
+   Start of LEVEL_04 calculations  2021-11-23 17:07
+===============================================================
+NCL routine /glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_04/NCL/get_PNA_index.ncl:
+	b''
+NCL routine /glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_04/NCL/scatter_plot_01.ncl:
+	b''
+NCL routine /glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_04/NCL/scatter_plot_02.ncl:
+	b''
+NCL routine /glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_04/NCL/scatter_plot_03.ncl:
+	b''
+NCL routine /glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_04/NCL/scatter_plot_04.ncl:
+	b''
+NCL routine /glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_04/NCL/scatter_plot_05.ncl:
+	b''
+NCL routine /glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_04/NCL/scatter_plot_06.ncl:
+	b''
+NCL routine /glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_04/NCL/scatter_plot_07.ncl:
+	b''
+NCL routine /glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_04/NCL/scatter_plot_08.ncl:
+	b''
+NCL routine /glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_04/NCL/scatter_plot_09.ncl:
+	b''
+NCL routine /glade/work/rneale/git/throw_away/MDTF-diagnostics-RWS3/diagnostics/ENSO_RWS/LEVEL_04/NCL/scatter_plot_10.ncl:
+	b''
+ LEVEL_04 completed 2021-11-23 17:09
+Starting ENSO_RWS.py 
+=================================================================
+ Scripts is going to calculate ENSO composites of simple variables    
+=================================================================
+=================================================================
+ General information is in README_general.docx/README_general.pdf files under
+  ~/diagnostics/ENSO_RWS                                             
+=================================================================
+=================================================================
+ The LEVEL_01 routine requires the following monthly variables in the input:  
+  Zg - geopotential height [m]        
+  U  - U wind [m/s], V - V wind [m/s] 
+  T  - temperature [K]                
+  OMEGA  - vertical velocity [Pa/s]   
+  TS   - skin surface temperature [K] 
+  PR   - precipitation rate [kg/m2/s] 
+=================================================================
+=================================================================
+ More detailed information regarding the LEVEL_01 module is in  
+ README_LEVEL_01.docx/README_LEVEL_01.pdf files under ~/diagnostics/ENSO_RWS/LEVEL_01/
+=================================================================
+=================================================================
+ Starting LEVEL_01 module 2021-11-23 17:01
+        Finished check_input_files_OBS.py
+        Finished get_directories_OBS.py
+        Finished get_directories.py
+        Finished check_input_files.py
+        Finished LEVEL_01.py
+ Finished LEVEL_01 module                         
+=================================================================
+=================================================================
+                         LEVEL_01 FINISHED                     
+=================================================================
+=================================================================
+ Scripts is going to calculate RWS terms based on results from LEVEL_01 
+=================================================================
+ Starting LEVEL_02 module 2021-11-23 17:06
+=================================================================
+        Finished LEVEL_02.py
+ Finished LEVEL_02 module                         
+=================================================================
+=================================================================
+ Scripts is going to calculate expanded set of RWS terms based on results from LEVEL_01 
+=================================================================
+ Starting LEVEL_04/05 module 2021-11-23 17:07
+=================================================================
+        Finished LEVEL_03.py
+ Finished LEVEL_03 module                         
+=================================================================
+========================== END =================================
+=================================================================
+ Scripts is going to calculate expanded set of RWS terms based on results from LEVEL_01 
+=================================================================
+=================================================================
+        Finished LEVEL_04.py
+ Finished LEVEL_04 module                         
+=================================================================
+========================== END =================================
+ RWS POD finished 2021-11-23 17:09
+========= POD END =============================================
+--------------------------------------------------------------------------------
+<#9YT1:CESM2.ENSO_RWS> was terminated or exited abnormally.
+Log for <#9YT1:CESM2.ENSO_RWS>:
+    INFO: 	Running ENSO_RWS.py for <#9YT1:CESM2.ENSO_RWS>.
+    INFO: <#9YT1:CESM2.ENSO_RWS> was terminated or exited abnormally.
+    INFO: Checking linked output files for <#9YT1:CESM2.ENSO_RWS>.
+    INFO: 	No files are missing.
