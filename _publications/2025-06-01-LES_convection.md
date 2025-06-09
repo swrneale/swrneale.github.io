@@ -1,6 +1,5 @@
 ---
-title: "Non-monotonic Convective Response to Vertical Wind Shear: A Closer Look from Cloud Resolving Model Simulation![image](https://github.com/user-attachments/assets/f02f4292-1913-4215-9207-e7bb38f39536)
-"
+title: "Non-monotonic Convective Response to Vertical Wind Shear: A Closer Look from Cloud Resolving Model Simulation"
 collection: publications
 category: manuscripts
 permalink: /publication/2024-06-01-LES_convection
