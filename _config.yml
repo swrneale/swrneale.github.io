@@ -36,22 +36,22 @@ author:
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : "https://scholar.google.com/citations?user=-zuGHIcAAAAJ"
   impactstory      : # URL
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : "0000-0003-4222-3918"
   semantic         : 
   pubmed           : # URL
-  researchgate     :  "https://www.researchgate.net/profile/Richard-Neale-4"
+  researchgate     :  "Richard-Neale-4"
   scopus           : # URL
 
   # Repositories and software development
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "@swrneale"
+  github           : "swrneale"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : "swrneale.bsky" # Replace this with you Bluesky username
+  bluesky          : "swrneale.bsky.social" # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -60,7 +60,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : "https://www.linkedin.com/in/rich-neale/"
+  linkedin         : "rich-neale"
   mastodon         : # 
   medium           : # URL
   pinterest        : # Username
