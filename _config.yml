@@ -34,9 +34,9 @@ author:
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "zuGHIcAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=-zuGHIcAAAAJ&hl=en&authuser=1"
   impactstory      : # URL
-  orcid            : "0000-0003-4222-3918"
+  orcid            : "https://orcid.org/0000-0003-4222-3918"
   semantic         : # URL
   pubmed           : # URL
   researchgate     :  "Richard-Neale-4"
