@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "air"
-title                    : "Richard Neale / Scientists, Colaborator, Leader"
+title                    : "Richard Neale / Scientist, Colaborator, Leader"
 title_separator          : "-"
 name                     : &name "Richard Neale"
 description              : &description "personal description"
