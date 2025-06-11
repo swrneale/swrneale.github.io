@@ -1,0 +1,18 @@
+# Input model data files used in this run of case CESM2:
+Loaded '/Users/rneale/Documents/NCAR/git/throw_away/inputdata/model/CESM2/mon/CESM2.zg.mon.nc'.
+Loaded '/Users/rneale/Documents/NCAR/git/throw_away/inputdata/model/CESM2/mon/CESM2.ua.mon.nc'.
+Loaded '/Users/rneale/Documents/NCAR/git/throw_away/inputdata/model/CESM2/mon/CESM2.va.mon.nc'.
+Loaded '/Users/rneale/Documents/NCAR/git/throw_away/inputdata/model/CESM2/mon/CESM2.ta.mon.nc'.
+Loaded '/Users/rneale/Documents/NCAR/git/throw_away/inputdata/model/CESM2/mon/CESM2.wap.mon.nc'.
+Loaded '/Users/rneale/Documents/NCAR/git/throw_away/inputdata/model/CESM2/mon/CESM2.pr.mon.nc'.
+Loaded '/Users/rneale/Documents/NCAR/git/throw_away/inputdata/model/CESM2/mon/CESM2.ts.mon.nc'.
+
+# Preprocessed files used as input to PODs:
+# (Depending on CLI flags, these will have been deleted if the package exited successfully.)
+Writing '/Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.zg.mon.nc'.
+Writing '/Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.ua.mon.nc'.
+Writing '/Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.va.mon.nc'.
+Writing '/Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.ta.mon.nc'.
+Writing '/Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.wap.mon.nc'.
+Writing '/Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.pr.mon.nc'.
+Writing '/Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.ts.mon.nc'.

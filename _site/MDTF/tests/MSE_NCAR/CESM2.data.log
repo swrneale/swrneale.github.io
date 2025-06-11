@@ -1,0 +1,38 @@
+# Input model data files used in this run of case CESM2:
+Loaded '/glade/work/rneale/git/throw_away/inputdata/model/CESM2/mon/CESM2.zg.mon.nc'.
+Loaded '/glade/work/rneale/git/throw_away/inputdata/model/CESM2/mon/CESM2.ua.mon.nc'.
+Loaded '/glade/work/rneale/git/throw_away/inputdata/model/CESM2/mon/CESM2.va.mon.nc'.
+Loaded '/glade/work/rneale/git/throw_away/inputdata/model/CESM2/mon/CESM2.ta.mon.nc'.
+Loaded '/glade/work/rneale/git/throw_away/inputdata/model/CESM2/mon/CESM2.hus.mon.nc'.
+Loaded '/glade/work/rneale/git/throw_away/inputdata/model/CESM2/mon/CESM2.wap.mon.nc'.
+Loaded '/glade/work/rneale/git/throw_away/inputdata/model/CESM2/mon/CESM2.pr.mon.nc'.
+Loaded '/glade/work/rneale/git/throw_away/inputdata/model/CESM2/mon/CESM2.ts.mon.nc'.
+Loaded '/glade/work/rneale/git/throw_away/inputdata/model/CESM2/mon/CESM2.hfss.mon.nc'.
+Loaded '/glade/work/rneale/git/throw_away/inputdata/model/CESM2/mon/CESM2.hfls.mon.nc'.
+Loaded '/glade/work/rneale/git/throw_away/inputdata/model/CESM2/mon/CESM2.rsus.mon.nc'.
+Loaded '/glade/work/rneale/git/throw_away/inputdata/model/CESM2/mon/CESM2.rsds.mon.nc'.
+Loaded '/glade/work/rneale/git/throw_away/inputdata/model/CESM2/mon/CESM2.rsdt.mon.nc'.
+Loaded '/glade/work/rneale/git/throw_away/inputdata/model/CESM2/mon/CESM2.rsut.mon.nc'.
+Loaded '/glade/work/rneale/git/throw_away/inputdata/model/CESM2/mon/CESM2.rlus.mon.nc'.
+Loaded '/glade/work/rneale/git/throw_away/inputdata/model/CESM2/mon/CESM2.rlds.mon.nc'.
+Loaded '/glade/work/rneale/git/throw_away/inputdata/model/CESM2/mon/CESM2.rlut.mon.nc'.
+
+# Preprocessed files used as input to PODs:
+# (Depending on CLI flags, these will have been deleted if the package exited successfully.)
+Writing '/glade/work/rneale/git/throw_away/wkdir_mse_work/MDTF_CESM2_1950_2005/ENSO_MSE/mon/CESM2.zg.mon.nc'.
+Writing '/glade/work/rneale/git/throw_away/wkdir_mse_work/MDTF_CESM2_1950_2005/ENSO_MSE/mon/CESM2.ua.mon.nc'.
+Writing '/glade/work/rneale/git/throw_away/wkdir_mse_work/MDTF_CESM2_1950_2005/ENSO_MSE/mon/CESM2.va.mon.nc'.
+Writing '/glade/work/rneale/git/throw_away/wkdir_mse_work/MDTF_CESM2_1950_2005/ENSO_MSE/mon/CESM2.ta.mon.nc'.
+Writing '/glade/work/rneale/git/throw_away/wkdir_mse_work/MDTF_CESM2_1950_2005/ENSO_MSE/mon/CESM2.hus.mon.nc'.
+Writing '/glade/work/rneale/git/throw_away/wkdir_mse_work/MDTF_CESM2_1950_2005/ENSO_MSE/mon/CESM2.wap.mon.nc'.
+Writing '/glade/work/rneale/git/throw_away/wkdir_mse_work/MDTF_CESM2_1950_2005/ENSO_MSE/mon/CESM2.pr.mon.nc'.
+Writing '/glade/work/rneale/git/throw_away/wkdir_mse_work/MDTF_CESM2_1950_2005/ENSO_MSE/mon/CESM2.ts.mon.nc'.
+Writing '/glade/work/rneale/git/throw_away/wkdir_mse_work/MDTF_CESM2_1950_2005/ENSO_MSE/mon/CESM2.hfss.mon.nc'.
+Writing '/glade/work/rneale/git/throw_away/wkdir_mse_work/MDTF_CESM2_1950_2005/ENSO_MSE/mon/CESM2.hfls.mon.nc'.
+Writing '/glade/work/rneale/git/throw_away/wkdir_mse_work/MDTF_CESM2_1950_2005/ENSO_MSE/mon/CESM2.rsus.mon.nc'.
+Writing '/glade/work/rneale/git/throw_away/wkdir_mse_work/MDTF_CESM2_1950_2005/ENSO_MSE/mon/CESM2.rsds.mon.nc'.
+Writing '/glade/work/rneale/git/throw_away/wkdir_mse_work/MDTF_CESM2_1950_2005/ENSO_MSE/mon/CESM2.rsdt.mon.nc'.
+Writing '/glade/work/rneale/git/throw_away/wkdir_mse_work/MDTF_CESM2_1950_2005/ENSO_MSE/mon/CESM2.rsut.mon.nc'.
+Writing '/glade/work/rneale/git/throw_away/wkdir_mse_work/MDTF_CESM2_1950_2005/ENSO_MSE/mon/CESM2.rlus.mon.nc'.
+Writing '/glade/work/rneale/git/throw_away/wkdir_mse_work/MDTF_CESM2_1950_2005/ENSO_MSE/mon/CESM2.rlds.mon.nc'.
+Writing '/glade/work/rneale/git/throw_away/wkdir_mse_work/MDTF_CESM2_1950_2005/ENSO_MSE/mon/CESM2.rlut.mon.nc'.

@@ -1,0 +1,70 @@
+
+<h2>
+<font color="blue">ENSO Vertical Processes Documentation</font>
+</h2>
+<hr>
+ENSO Vertical Processes (ENSO_VERT_PROC) diagnostic package consists of five levels. With a
+focus on identifying leading processes that determine ENSO-induced global teleconnection,
+particularly the Pacific North American (PNA) pattern, main module of the POD estimates tendencies
+in vertical processes (e.g., moisture and temperature) along the equatorial western-central-eastern
+Pacific, east Asian monsoon, subtropical North Pacific and South Pacific. During ENSO evolution,
+vertical processes (e.g., diabatic heating and associated upper-level divergence) in these regions are
+identified as important for forcing and the generation of barotropic stationary Rossby waves that are
+regarded as the principal agent in anchoring the mid-high latitude circulation anomalies during ENSO.
+In that pursuit, POD is applied to monthly data (climate model or reanalysis products), and
+VERT_PROC tendencies are estimated for “composite” El Niño or La Nina events. To attain robust
+“composite” results a reasonable sample of ENSO winters is needed. However, the POD can be applied
+even for a single El Niño winter (e.g., when applied to seasonal prediction models). Here, reanalysis
+products (e.g., ERA-interim) is “considered” as “observations” and diagnostics obtained from ERA-
+Interim and other reanalysis products are used for model validation. In this general document, brief
+descriptions of the FOUR levels of the POD are provided but detailed information is provided at each
+level. For the FOUR levels of diagnostics, selected results are illustrated here.
+POD works efficiently if model data contain sufficient number of El Niño or La Nina events.
+Predigested results are available for both El Niño and La Nina composites.
+Version and contact information
+
+<hr>
+<br>
+Version 1.0, 07/06/2021
+PI: Dr. H. Annamalai (IPRC/SOEST University of/ Hawaii; hanna@hawaii.edu)<br>
+Co-PI: Richard Neale (NCAR, Boulder; neale@ucar.edu)<br>
+Current developer: Richard Neale and Jan Hafner (IPRC/SOEST; jhafner@hawaii.edu)/project/amp/rneale/reading_home/home/pics<br>
+Open source copyright agreement
+The MDTF framework is distributed under the LGPLv3 license (see LICENSE.txt).
+
+<hr>
+
+<h3>Functionality</h3>
+
+<h4>The current package consists of the following functionalities:</h4>
+
+<ol>
+<li> Climatological diagnostics by script LEVEL_01.py </li>
+<li> Model development processes tendencies script LEVEL_02.py</li>
+<li> AMIP/CMIP processes tendencies script LEVEL_03.py</li>
+<li> Large-ensemble analysis scripts (tendencies/divergence) LEVEL_04.py</li>
+<li> Key relationship scatterplots (among regional divergence and tendency profiles) LEVEL_05.py</li>
+</ol>
+
+<hr>
+
+<b>References</b>
+<br>
+1. Annamalai, H., R. Neale and J. Hafner: ENSO-induced teleconnection: development of PODs to
+assess Rossby wave sources in climate models (in preparation).<br>
+2. R. Neale and H. Annamalai: Rossby wave sources and ENSO- induced teleconnections in CAM6
+model development versions and associated vertical processes (in preparation).<br>
+<br>
+
+
+More about ENSO_VERT_PROC
+Vertical Processes POD to assess ENSO-induced teleconnection (ENSO_VERT_PROC)
+The NOAA-MDTF Vertical Processes Diagnostic package would fill a critical gap in the diagnostics
+tools available to climate model developers. Both in basic-state and anomalous conditions, changes in
+the response of moist processes in model either parameterization modifications or tuning and
+calibration, can often change the nature of the seasonal distributions of tropical precipitation and
+associated heating, and by association moistening and divergence profiles. While validation of
+precipitation is straightforward, an understanding of the circulation consequences in the tropics, and
+particularly the extra-tropics is not. RICH MORE SPECIFIC POINTS?
+
+

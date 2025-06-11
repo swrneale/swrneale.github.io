@@ -1,0 +1,935 @@
+MDTF PACKAGE LOG
+
+Started logging at 2021-11-23 17:18:33.143407
+git hash/branch: 8067891954c6d726037d534549ea6e541284b4f5 (on ENSO_RWS)
+sys.platform: 'darwin'
+sys.version: '3.7.12 | packaged by conda-forge | (default, Oct 26 2021, 05:57:50) 
+[Clang 11.1.0 ]'
+--------------------------------------------------------------------------------
+
+17:18:30 DEBUG: initial_log_config (logs.py line 749):
+    Console loggers configured.
+
+17:18:32 DEBUG: __init__ (selector_events.py line 58):
+    Using selector: KqueueSelector
+
+17:18:33 DEBUG: read_json (filesystem.py line 353):
+    Reading file /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/data/modifiers.jsonc
+
+17:18:33 DEBUG: read_json (filesystem.py line 353):
+    Reading file /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/data/fieldlist_CMIP.jsonc
+
+17:18:33 DEBUG: add_convention (core.py line 694):
+    Adding variable name convention 'CMIP'
+
+17:18:33 DEBUG: read_json (filesystem.py line 353):
+    Reading file /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/data/fieldlist_GFDL.jsonc
+
+17:18:33 DEBUG: add_convention (core.py line 694):
+    Adding variable name convention 'GFDL'
+
+17:18:33 DEBUG: read_json (filesystem.py line 353):
+    Reading file /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/data/fieldlist_NCAR.jsonc
+
+17:18:33 DEBUG: add_convention (core.py line 694):
+    Adding variable name convention 'NCAR'
+
+17:18:33 INFO: _print_config (core.py line 1040):
+    PACKAGE SETTINGS:
+
+17:18:33 INFO: _print_config (core.py line 1041):
+      case_list(0): 
+        CASENAME: CESM2
+        model: CESM2
+        convention: CMIP
+        FIRSTYR: 1950
+        LASTYR: 2005
+        slon1: 160
+        slon2: 200
+        slat1: -10
+        slat2: 5
+        pod_list: 
+          ENSO_RWS
+        experiment: ""
+      paths: 
+        CODE_ROOT: /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3
+        OBS_DATA_ROOT: /Users/rneale/Documents/NCAR/git/throw_away/inputdata/obs_data
+        MODEL_DATA_ROOT: /Users/rneale/Documents/NCAR/git/throw_away/inputdata/model
+        WORKING_DIR: /Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work
+        OUTPUT_DIR: /Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_out
+        conda_root: /Users/rneale/miniconda3/
+        conda_env_root: /Users/rneale/miniconda3/envs/
+        TEMP_DIR_ROOT: /Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work
+      settings: 
+        output_manager: html
+        save_nc: true
+        make_variab_tar: true
+        overwrite: true
+        convention: CMIP
+        data_manager: Local_File
+        environment_manager: Conda
+        runtime_manager: subprocess
+        verbose: 1
+        file_transfer_timeout: 300
+      env_vars: 
+        RGB: /Users/rneale/Documents/NCAR/git/throw_away/MDTF-diagnostics-RWS3/shared/rgb
+        MPLBACKEND: Agg
+
+17:18:33 INFO: main (core.py line 1070):
+    ### MDTFFramework: initializing case 'CESM2'.
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Setting CASE_ROOT_DIR to MODEL_DATA_ROOT = '/Users/rneale/Documents/NCAR/git/throw_away/inputdata/model'.
+
+17:18:33 DEBUG: log (logs.py line 328):
+    'sample_dataset' not supplied, using CASENAME = 'CESM2'.
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Set program for <#4w4I:CESM2.ENSO_RWS> to 'python'.
+
+17:18:33 DEBUG: log (logs.py line 328):
+    PrecipRateToFluxFunction edit_request on <#4KV2:ENSO_RWS.pr>: caught KeyError("Standard name 'precipitation_rate' not defined in convention 'CMIP'.") when trying to translate 'precipitation_rate'; varlist unaltered.
+
+17:18:33 INFO: log (logs.py line 328):
+    Starting data file search at /Users/rneale/Documents/NCAR/git/throw_away/inputdata/model:
+
+17:18:33 INFO: log (logs.py line 328):
+    Directory crawl found 17 files.
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Query batch: [<#4AMY:ENSO_RWS.zg>, <#4CWG:ENSO_RWS.ua>, <#4EK0:ENSO_RWS.va>, <#4GLW:ENSO_RWS.ta>, <#4IzS:ENSO_RWS.wap>, <#4KV2:ENSO_RWS.pr>, <#4MX0:ENSO_RWS.ts>].
+
+17:18:33 INFO: log (logs.py line 328):
+    Querying <zg> (geopotential_height).
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Query found <expt_key=('CESM2', '', ''), DataKey(4)> for <#4AMY:ENSO_RWS.zg>
+
+17:18:33 INFO: log (logs.py line 328):
+    Querying <ua> (eastward_wind).
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Query found <expt_key=('CESM2', '', ''), DataKey(9)> for <#4CWG:ENSO_RWS.ua>
+
+17:18:33 INFO: log (logs.py line 328):
+    Querying <va> (northward_wind).
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Query found <expt_key=('CESM2', '', ''), DataKey(15)> for <#4EK0:ENSO_RWS.va>
+
+17:18:33 INFO: log (logs.py line 328):
+    Querying <ta> (air_temperature).
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Query found <expt_key=('CESM2', '', ''), DataKey(7)> for <#4GLW:ENSO_RWS.ta>
+
+17:18:33 INFO: log (logs.py line 328):
+    Querying <wap> (lagrangian_tendency_of_air_pressure).
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Query found <expt_key=('CESM2', '', ''), DataKey(12)> for <#4IzS:ENSO_RWS.wap>
+
+17:18:33 INFO: log (logs.py line 328):
+    Querying <pr> (precipitation_flux).
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Query found <expt_key=('CESM2', '', ''), DataKey(6)> for <#4KV2:ENSO_RWS.pr>
+
+17:18:33 INFO: log (logs.py line 328):
+    Querying <ts> (surface_temperature).
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Query found <expt_key=('CESM2', '', ''), DataKey(14)> for <#4MX0:ENSO_RWS.ts>
+
+17:18:33 DEBUG: log (logs.py line 328):
+    1 expt attr choices for CESM2 from <#4AMY:ENSO_RWS.zg>
+
+17:18:33 DEBUG: log (logs.py line 328):
+    1 expt attr choices for CESM2 from <#4CWG:ENSO_RWS.ua>
+
+17:18:33 DEBUG: log (logs.py line 328):
+    1 expt attr choices for CESM2 from <#4EK0:ENSO_RWS.va>
+
+17:18:33 DEBUG: log (logs.py line 328):
+    1 expt attr choices for CESM2 from <#4GLW:ENSO_RWS.ta>
+
+17:18:33 DEBUG: log (logs.py line 328):
+    1 expt attr choices for CESM2 from <#4IzS:ENSO_RWS.wap>
+
+17:18:33 DEBUG: log (logs.py line 328):
+    1 expt attr choices for CESM2 from <#4KV2:ENSO_RWS.pr>
+
+17:18:33 DEBUG: log (logs.py line 328):
+    1 expt attr choices for CESM2 from <#4MX0:ENSO_RWS.ts>
+
+17:18:33 DEBUG: log (logs.py line 328):
+    1 expt attr choices for CESM2
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Setting experiment_key for 'CESM2' to 'CESM2'
+
+17:18:33 DEBUG: log (logs.py line 328):
+    DataKey(4) selected as part of experiment_key '('CESM2', '', '')'.
+
+17:18:33 DEBUG: log (logs.py line 328):
+    DataKey(9) selected as part of experiment_key '('CESM2', '', '')'.
+
+17:18:33 DEBUG: log (logs.py line 328):
+    DataKey(15) selected as part of experiment_key '('CESM2', '', '')'.
+
+17:18:33 DEBUG: log (logs.py line 328):
+    DataKey(7) selected as part of experiment_key '('CESM2', '', '')'.
+
+17:18:33 DEBUG: log (logs.py line 328):
+    DataKey(12) selected as part of experiment_key '('CESM2', '', '')'.
+
+17:18:33 DEBUG: log (logs.py line 328):
+    DataKey(6) selected as part of experiment_key '('CESM2', '', '')'.
+
+17:18:33 DEBUG: log (logs.py line 328):
+    DataKey(14) selected as part of experiment_key '('CESM2', '', '')'.
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Fetch batch: [<#4AMY:ENSO_RWS.zg>, <#4CWG:ENSO_RWS.ua>, <#4EK0:ENSO_RWS.va>, <#4GLW:ENSO_RWS.ta>, <#4IzS:ENSO_RWS.wap>, <#4KV2:ENSO_RWS.pr>, <#4MX0:ENSO_RWS.ts>].
+
+17:18:33 INFO: log (logs.py line 328):
+    Fetching <#4AMY:ENSO_RWS.zg> (='zg' @ 1mo).
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Fetching DataKey(4).
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Fetch DataKey(4): found /Users/rneale/Documents/NCAR/git/throw_away/inputdata/model/CESM2/mon/CESM2.zg.mon.nc.
+
+17:18:33 INFO: log (logs.py line 328):
+    Fetching <#4CWG:ENSO_RWS.ua> (='ua' @ 1mo).
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Fetching DataKey(9).
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Fetch DataKey(9): found /Users/rneale/Documents/NCAR/git/throw_away/inputdata/model/CESM2/mon/CESM2.ua.mon.nc.
+
+17:18:33 INFO: log (logs.py line 328):
+    Fetching <#4EK0:ENSO_RWS.va> (='va' @ 1mo).
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Fetching DataKey(15).
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Fetch DataKey(15): found /Users/rneale/Documents/NCAR/git/throw_away/inputdata/model/CESM2/mon/CESM2.va.mon.nc.
+
+17:18:33 INFO: log (logs.py line 328):
+    Fetching <#4GLW:ENSO_RWS.ta> (='ta' @ 1mo).
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Fetching DataKey(7).
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Fetch DataKey(7): found /Users/rneale/Documents/NCAR/git/throw_away/inputdata/model/CESM2/mon/CESM2.ta.mon.nc.
+
+17:18:33 INFO: log (logs.py line 328):
+    Fetching <#4IzS:ENSO_RWS.wap> (='wap' @ 1mo).
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Fetching DataKey(12).
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Fetch DataKey(12): found /Users/rneale/Documents/NCAR/git/throw_away/inputdata/model/CESM2/mon/CESM2.wap.mon.nc.
+
+17:18:33 INFO: log (logs.py line 328):
+    Fetching <#4KV2:ENSO_RWS.pr> (='pr' @ 1mo).
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Fetching DataKey(6).
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Fetch DataKey(6): found /Users/rneale/Documents/NCAR/git/throw_away/inputdata/model/CESM2/mon/CESM2.pr.mon.nc.
+
+17:18:33 INFO: log (logs.py line 328):
+    Fetching <#4MX0:ENSO_RWS.ts> (='ts' @ 1mo).
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Fetching DataKey(14).
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Fetch DataKey(14): found /Users/rneale/Documents/NCAR/git/throw_away/inputdata/model/CESM2/mon/CESM2.ts.mon.nc.
+
+17:18:33 INFO: log (logs.py line 328):
+    Preprocessing <#4AMY:ENSO_RWS.zg> (='zg' @ 1mo).
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Loaded '/Users/rneale/Documents/NCAR/git/throw_away/inputdata/model/CESM2/mon/CESM2.zg.mon.nc'.
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Read 7935 mb for <#4AMY:ENSO_RWS.zg>.
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Updating units for 'time' to value 'days since 0001-01-01 00:00:00' from dataset.
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Updating calendar for 'time' to value 'noleap' from dataset.
+
+17:18:33 INFO: log (logs.py line 328):
+    No standard_name for 'time_bnds' found in dataset; setting to 'time'.
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Updating bounds for 'time' to value 'time_bnds' from dataset.
+
+17:18:33 WARNING: log (logs.py line 328):
+    Received event MetadataEvent("Unexpected units for variable 'plev': 'Pa' (expected 'hPa').").
+
+17:18:33 INFO: log (logs.py line 328):
+    No standard_name for 'lat_bnds' found in dataset; setting to 'latitude'.
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Updating bounds for 'lat' to value 'lat_bnds' from dataset.
+
+17:18:33 INFO: log (logs.py line 328):
+    No standard_name for 'lon_bnds' found in dataset; setting to 'longitude'.
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Updating bounds for 'lon' to value 'lon_bnds' from dataset.
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Calling CropDateRangeFunction on <#4AMY:ENSO_RWS.zg>.
+
+17:18:33 INFO: log (logs.py line 328):
+    Cropped date range of <#4AMY:ENSO_RWS.zg> from '1850-01-15 -- 2014-12-15' to '1950-01-15 -- 2005-12-15'.
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Calling PrecipRateToFluxFunction on <#4AMY:ENSO_RWS.zg>.
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Calling ConvertUnitsFunction on <#4AMY:ENSO_RWS.zg>.
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Source, dest units of 'zg' (geopotential_height) identical (m); no conversion done.
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Convert units of 'plev' (air_pressure) from 'Pa' to 'hPa'.
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Source, dest units of 'lat' (latitude) identical (degrees_north); no conversion done.
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Source, dest units of 'lat_bnds' (latitude) identical (degrees_north); no conversion done.
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Source, dest units of 'lon' (longitude) identical (degrees_east); no conversion done.
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Source, dest units of 'lon_bnds' (longitude) identical (degrees_east); no conversion done.
+
+17:18:33 INFO: log (logs.py line 328):
+    Converted units on <#4AMY:ENSO_RWS.zg>.
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Calling ExtractLevelFunction on <#4AMY:ENSO_RWS.zg>.
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Exit ExtractLevelFunction for <#4AMY:ENSO_RWS.zg>: no level requested.
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Calling RenameVariablesFunction on <#4AMY:ENSO_RWS.zg>.
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Rename Z axis of <#4AMY:ENSO_RWS.zg> from 'plev' to 'lev'.
+
+17:18:33 INFO: log (logs.py line 328):
+    Writing 2693 mb to $WK_DIR/ENSO_RWS/mon/CESM2.zg.mon.nc
+
+17:18:33 DEBUG: log (logs.py line 328):
+    Writing '/Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.zg.mon.nc'.
+
+17:20:14 DEBUG: log (logs.py line 328):
+    Successful preprocessor exit on <#4AMY:ENSO_RWS.zg> (='zg' @ 1mo).
+
+17:20:14 INFO: log (logs.py line 328):
+    Preprocessing <#4CWG:ENSO_RWS.ua> (='ua' @ 1mo).
+
+17:20:14 DEBUG: log (logs.py line 328):
+    Loaded '/Users/rneale/Documents/NCAR/git/throw_away/inputdata/model/CESM2/mon/CESM2.ua.mon.nc'.
+
+17:20:14 DEBUG: log (logs.py line 328):
+    Read 7935 mb for <#4CWG:ENSO_RWS.ua>.
+
+17:20:14 DEBUG: log (logs.py line 328):
+    Updating units for 'time' to value 'days since 0001-01-01 00:00:00' from dataset.
+
+17:20:14 DEBUG: log (logs.py line 328):
+    Updating calendar for 'time' to value 'noleap' from dataset.
+
+17:20:14 INFO: log (logs.py line 328):
+    No standard_name for 'time_bnds' found in dataset; setting to 'time'.
+
+17:20:14 DEBUG: log (logs.py line 328):
+    Updating bounds for 'time' to value 'time_bnds' from dataset.
+
+17:20:14 WARNING: log (logs.py line 328):
+    Received event MetadataEvent("Unexpected units for variable 'plev': 'Pa' (expected 'hPa').").
+
+17:20:14 INFO: log (logs.py line 328):
+    No standard_name for 'lat_bnds' found in dataset; setting to 'latitude'.
+
+17:20:14 DEBUG: log (logs.py line 328):
+    Updating bounds for 'lat' to value 'lat_bnds' from dataset.
+
+17:20:14 INFO: log (logs.py line 328):
+    No standard_name for 'lon_bnds' found in dataset; setting to 'longitude'.
+
+17:20:14 DEBUG: log (logs.py line 328):
+    Updating bounds for 'lon' to value 'lon_bnds' from dataset.
+
+17:20:14 DEBUG: log (logs.py line 328):
+    Calling CropDateRangeFunction on <#4CWG:ENSO_RWS.ua>.
+
+17:20:14 INFO: log (logs.py line 328):
+    Cropped date range of <#4CWG:ENSO_RWS.ua> from '1850-01-15 -- 2014-12-15' to '1950-01-15 -- 2005-12-15'.
+
+17:20:14 DEBUG: log (logs.py line 328):
+    Calling PrecipRateToFluxFunction on <#4CWG:ENSO_RWS.ua>.
+
+17:20:14 DEBUG: log (logs.py line 328):
+    Calling ConvertUnitsFunction on <#4CWG:ENSO_RWS.ua>.
+
+17:20:14 DEBUG: log (logs.py line 328):
+    Source, dest units of 'ua' (eastward_wind) identical (m s-1); no conversion done.
+
+17:20:14 DEBUG: log (logs.py line 328):
+    Convert units of 'plev' (air_pressure) from 'Pa' to 'hPa'.
+
+17:20:14 DEBUG: log (logs.py line 328):
+    Source, dest units of 'lat' (latitude) identical (degrees_north); no conversion done.
+
+17:20:14 DEBUG: log (logs.py line 328):
+    Source, dest units of 'lat_bnds' (latitude) identical (degrees_north); no conversion done.
+
+17:20:14 DEBUG: log (logs.py line 328):
+    Source, dest units of 'lon' (longitude) identical (degrees_east); no conversion done.
+
+17:20:14 DEBUG: log (logs.py line 328):
+    Source, dest units of 'lon_bnds' (longitude) identical (degrees_east); no conversion done.
+
+17:20:14 INFO: log (logs.py line 328):
+    Converted units on <#4CWG:ENSO_RWS.ua>.
+
+17:20:14 DEBUG: log (logs.py line 328):
+    Calling ExtractLevelFunction on <#4CWG:ENSO_RWS.ua>.
+
+17:20:14 DEBUG: log (logs.py line 328):
+    Exit ExtractLevelFunction for <#4CWG:ENSO_RWS.ua>: no level requested.
+
+17:20:14 DEBUG: log (logs.py line 328):
+    Calling RenameVariablesFunction on <#4CWG:ENSO_RWS.ua>.
+
+17:20:14 DEBUG: log (logs.py line 328):
+    Rename Z axis of <#4CWG:ENSO_RWS.ua> from 'plev' to 'lev'.
+
+17:20:14 INFO: log (logs.py line 328):
+    Writing 2693 mb to $WK_DIR/ENSO_RWS/mon/CESM2.ua.mon.nc
+
+17:20:14 DEBUG: log (logs.py line 328):
+    Writing '/Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.ua.mon.nc'.
+
+17:22:04 DEBUG: log (logs.py line 328):
+    Successful preprocessor exit on <#4CWG:ENSO_RWS.ua> (='ua' @ 1mo).
+
+17:22:04 INFO: log (logs.py line 328):
+    Preprocessing <#4EK0:ENSO_RWS.va> (='va' @ 1mo).
+
+17:22:04 DEBUG: log (logs.py line 328):
+    Loaded '/Users/rneale/Documents/NCAR/git/throw_away/inputdata/model/CESM2/mon/CESM2.va.mon.nc'.
+
+17:22:04 DEBUG: log (logs.py line 328):
+    Read 7935 mb for <#4EK0:ENSO_RWS.va>.
+
+17:22:05 DEBUG: log (logs.py line 328):
+    Updating units for 'time' to value 'days since 0001-01-01 00:00:00' from dataset.
+
+17:22:05 DEBUG: log (logs.py line 328):
+    Updating calendar for 'time' to value 'noleap' from dataset.
+
+17:22:05 INFO: log (logs.py line 328):
+    No standard_name for 'time_bnds' found in dataset; setting to 'time'.
+
+17:22:05 DEBUG: log (logs.py line 328):
+    Updating bounds for 'time' to value 'time_bnds' from dataset.
+
+17:22:05 WARNING: log (logs.py line 328):
+    Received event MetadataEvent("Unexpected units for variable 'plev': 'Pa' (expected 'hPa').").
+
+17:22:05 INFO: log (logs.py line 328):
+    No standard_name for 'lat_bnds' found in dataset; setting to 'latitude'.
+
+17:22:05 DEBUG: log (logs.py line 328):
+    Updating bounds for 'lat' to value 'lat_bnds' from dataset.
+
+17:22:05 INFO: log (logs.py line 328):
+    No standard_name for 'lon_bnds' found in dataset; setting to 'longitude'.
+
+17:22:05 DEBUG: log (logs.py line 328):
+    Updating bounds for 'lon' to value 'lon_bnds' from dataset.
+
+17:22:05 DEBUG: log (logs.py line 328):
+    Calling CropDateRangeFunction on <#4EK0:ENSO_RWS.va>.
+
+17:22:05 INFO: log (logs.py line 328):
+    Cropped date range of <#4EK0:ENSO_RWS.va> from '1850-01-15 -- 2014-12-15' to '1950-01-15 -- 2005-12-15'.
+
+17:22:05 DEBUG: log (logs.py line 328):
+    Calling PrecipRateToFluxFunction on <#4EK0:ENSO_RWS.va>.
+
+17:22:05 DEBUG: log (logs.py line 328):
+    Calling ConvertUnitsFunction on <#4EK0:ENSO_RWS.va>.
+
+17:22:05 DEBUG: log (logs.py line 328):
+    Source, dest units of 'va' (northward_wind) identical (m s-1); no conversion done.
+
+17:22:05 DEBUG: log (logs.py line 328):
+    Convert units of 'plev' (air_pressure) from 'Pa' to 'hPa'.
+
+17:22:05 DEBUG: log (logs.py line 328):
+    Source, dest units of 'lat' (latitude) identical (degrees_north); no conversion done.
+
+17:22:05 DEBUG: log (logs.py line 328):
+    Source, dest units of 'lat_bnds' (latitude) identical (degrees_north); no conversion done.
+
+17:22:05 DEBUG: log (logs.py line 328):
+    Source, dest units of 'lon' (longitude) identical (degrees_east); no conversion done.
+
+17:22:05 DEBUG: log (logs.py line 328):
+    Source, dest units of 'lon_bnds' (longitude) identical (degrees_east); no conversion done.
+
+17:22:05 INFO: log (logs.py line 328):
+    Converted units on <#4EK0:ENSO_RWS.va>.
+
+17:22:05 DEBUG: log (logs.py line 328):
+    Calling ExtractLevelFunction on <#4EK0:ENSO_RWS.va>.
+
+17:22:05 DEBUG: log (logs.py line 328):
+    Exit ExtractLevelFunction for <#4EK0:ENSO_RWS.va>: no level requested.
+
+17:22:05 DEBUG: log (logs.py line 328):
+    Calling RenameVariablesFunction on <#4EK0:ENSO_RWS.va>.
+
+17:22:05 DEBUG: log (logs.py line 328):
+    Rename Z axis of <#4EK0:ENSO_RWS.va> from 'plev' to 'lev'.
+
+17:22:05 INFO: log (logs.py line 328):
+    Writing 2693 mb to $WK_DIR/ENSO_RWS/mon/CESM2.va.mon.nc
+
+17:22:05 DEBUG: log (logs.py line 328):
+    Writing '/Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.va.mon.nc'.
+
+17:24:06 DEBUG: log (logs.py line 328):
+    Successful preprocessor exit on <#4EK0:ENSO_RWS.va> (='va' @ 1mo).
+
+17:24:06 INFO: log (logs.py line 328):
+    Preprocessing <#4GLW:ENSO_RWS.ta> (='ta' @ 1mo).
+
+17:24:06 DEBUG: log (logs.py line 328):
+    Loaded '/Users/rneale/Documents/NCAR/git/throw_away/inputdata/model/CESM2/mon/CESM2.ta.mon.nc'.
+
+17:24:06 DEBUG: log (logs.py line 328):
+    Read 7935 mb for <#4GLW:ENSO_RWS.ta>.
+
+17:24:07 DEBUG: log (logs.py line 328):
+    Updating units for 'time' to value 'days since 0001-01-01 00:00:00' from dataset.
+
+17:24:07 DEBUG: log (logs.py line 328):
+    Updating calendar for 'time' to value 'noleap' from dataset.
+
+17:24:07 INFO: log (logs.py line 328):
+    No standard_name for 'time_bnds' found in dataset; setting to 'time'.
+
+17:24:07 DEBUG: log (logs.py line 328):
+    Updating bounds for 'time' to value 'time_bnds' from dataset.
+
+17:24:07 WARNING: log (logs.py line 328):
+    Received event MetadataEvent("Unexpected units for variable 'plev': 'Pa' (expected 'hPa').").
+
+17:24:07 INFO: log (logs.py line 328):
+    No standard_name for 'lat_bnds' found in dataset; setting to 'latitude'.
+
+17:24:07 DEBUG: log (logs.py line 328):
+    Updating bounds for 'lat' to value 'lat_bnds' from dataset.
+
+17:24:07 INFO: log (logs.py line 328):
+    No standard_name for 'lon_bnds' found in dataset; setting to 'longitude'.
+
+17:24:07 DEBUG: log (logs.py line 328):
+    Updating bounds for 'lon' to value 'lon_bnds' from dataset.
+
+17:24:07 DEBUG: log (logs.py line 328):
+    Calling CropDateRangeFunction on <#4GLW:ENSO_RWS.ta>.
+
+17:24:07 INFO: log (logs.py line 328):
+    Cropped date range of <#4GLW:ENSO_RWS.ta> from '1850-01-15 -- 2014-12-15' to '1950-01-15 -- 2005-12-15'.
+
+17:24:07 DEBUG: log (logs.py line 328):
+    Calling PrecipRateToFluxFunction on <#4GLW:ENSO_RWS.ta>.
+
+17:24:07 DEBUG: log (logs.py line 328):
+    Calling ConvertUnitsFunction on <#4GLW:ENSO_RWS.ta>.
+
+17:24:07 DEBUG: log (logs.py line 328):
+    Source, dest units of 'ta' (air_temperature) identical (K); no conversion done.
+
+17:24:07 DEBUG: log (logs.py line 328):
+    Convert units of 'plev' (air_pressure) from 'Pa' to 'hPa'.
+
+17:24:07 DEBUG: log (logs.py line 328):
+    Source, dest units of 'lat' (latitude) identical (degrees_north); no conversion done.
+
+17:24:07 DEBUG: log (logs.py line 328):
+    Source, dest units of 'lat_bnds' (latitude) identical (degrees_north); no conversion done.
+
+17:24:07 DEBUG: log (logs.py line 328):
+    Source, dest units of 'lon' (longitude) identical (degrees_east); no conversion done.
+
+17:24:07 DEBUG: log (logs.py line 328):
+    Source, dest units of 'lon_bnds' (longitude) identical (degrees_east); no conversion done.
+
+17:24:07 INFO: log (logs.py line 328):
+    Converted units on <#4GLW:ENSO_RWS.ta>.
+
+17:24:07 DEBUG: log (logs.py line 328):
+    Calling ExtractLevelFunction on <#4GLW:ENSO_RWS.ta>.
+
+17:24:07 DEBUG: log (logs.py line 328):
+    Exit ExtractLevelFunction for <#4GLW:ENSO_RWS.ta>: no level requested.
+
+17:24:07 DEBUG: log (logs.py line 328):
+    Calling RenameVariablesFunction on <#4GLW:ENSO_RWS.ta>.
+
+17:24:07 DEBUG: log (logs.py line 328):
+    Rename Z axis of <#4GLW:ENSO_RWS.ta> from 'plev' to 'lev'.
+
+17:24:07 INFO: log (logs.py line 328):
+    Writing 2693 mb to $WK_DIR/ENSO_RWS/mon/CESM2.ta.mon.nc
+
+17:24:07 DEBUG: log (logs.py line 328):
+    Writing '/Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.ta.mon.nc'.
+
+17:26:15 DEBUG: log (logs.py line 328):
+    Successful preprocessor exit on <#4GLW:ENSO_RWS.ta> (='ta' @ 1mo).
+
+17:26:15 INFO: log (logs.py line 328):
+    Preprocessing <#4IzS:ENSO_RWS.wap> (='wap' @ 1mo).
+
+17:26:15 DEBUG: log (logs.py line 328):
+    Loaded '/Users/rneale/Documents/NCAR/git/throw_away/inputdata/model/CESM2/mon/CESM2.wap.mon.nc'.
+
+17:26:15 DEBUG: log (logs.py line 328):
+    Read 7935 mb for <#4IzS:ENSO_RWS.wap>.
+
+17:26:15 DEBUG: log (logs.py line 328):
+    Updating units for 'time' to value 'days since 0001-01-01 00:00:00' from dataset.
+
+17:26:15 DEBUG: log (logs.py line 328):
+    Updating calendar for 'time' to value 'noleap' from dataset.
+
+17:26:15 INFO: log (logs.py line 328):
+    No standard_name for 'time_bnds' found in dataset; setting to 'time'.
+
+17:26:15 DEBUG: log (logs.py line 328):
+    Updating bounds for 'time' to value 'time_bnds' from dataset.
+
+17:26:15 WARNING: log (logs.py line 328):
+    Received event MetadataEvent("Unexpected units for variable 'plev': 'Pa' (expected 'hPa').").
+
+17:26:15 INFO: log (logs.py line 328):
+    No standard_name for 'lat_bnds' found in dataset; setting to 'latitude'.
+
+17:26:15 DEBUG: log (logs.py line 328):
+    Updating bounds for 'lat' to value 'lat_bnds' from dataset.
+
+17:26:15 INFO: log (logs.py line 328):
+    No standard_name for 'lon_bnds' found in dataset; setting to 'longitude'.
+
+17:26:15 DEBUG: log (logs.py line 328):
+    Updating bounds for 'lon' to value 'lon_bnds' from dataset.
+
+17:26:15 DEBUG: log (logs.py line 328):
+    Calling CropDateRangeFunction on <#4IzS:ENSO_RWS.wap>.
+
+17:26:15 INFO: log (logs.py line 328):
+    Cropped date range of <#4IzS:ENSO_RWS.wap> from '1850-01-15 -- 2014-12-15' to '1950-01-15 -- 2005-12-15'.
+
+17:26:15 DEBUG: log (logs.py line 328):
+    Calling PrecipRateToFluxFunction on <#4IzS:ENSO_RWS.wap>.
+
+17:26:15 DEBUG: log (logs.py line 328):
+    Calling ConvertUnitsFunction on <#4IzS:ENSO_RWS.wap>.
+
+17:26:15 DEBUG: log (logs.py line 328):
+    Source, dest units of 'wap' (lagrangian_tendency_of_air_pressure) identical (Pa s-1); no conversion done.
+
+17:26:15 DEBUG: log (logs.py line 328):
+    Convert units of 'plev' (air_pressure) from 'Pa' to 'hPa'.
+
+17:26:15 DEBUG: log (logs.py line 328):
+    Source, dest units of 'lat' (latitude) identical (degrees_north); no conversion done.
+
+17:26:15 DEBUG: log (logs.py line 328):
+    Source, dest units of 'lat_bnds' (latitude) identical (degrees_north); no conversion done.
+
+17:26:15 DEBUG: log (logs.py line 328):
+    Source, dest units of 'lon' (longitude) identical (degrees_east); no conversion done.
+
+17:26:15 DEBUG: log (logs.py line 328):
+    Source, dest units of 'lon_bnds' (longitude) identical (degrees_east); no conversion done.
+
+17:26:15 INFO: log (logs.py line 328):
+    Converted units on <#4IzS:ENSO_RWS.wap>.
+
+17:26:15 DEBUG: log (logs.py line 328):
+    Calling ExtractLevelFunction on <#4IzS:ENSO_RWS.wap>.
+
+17:26:15 DEBUG: log (logs.py line 328):
+    Exit ExtractLevelFunction for <#4IzS:ENSO_RWS.wap>: no level requested.
+
+17:26:15 DEBUG: log (logs.py line 328):
+    Calling RenameVariablesFunction on <#4IzS:ENSO_RWS.wap>.
+
+17:26:15 DEBUG: log (logs.py line 328):
+    Rename Z axis of <#4IzS:ENSO_RWS.wap> from 'plev' to 'lev'.
+
+17:26:15 INFO: log (logs.py line 328):
+    Writing 2693 mb to $WK_DIR/ENSO_RWS/mon/CESM2.wap.mon.nc
+
+17:26:15 DEBUG: log (logs.py line 328):
+    Writing '/Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.wap.mon.nc'.
+
+17:28:29 DEBUG: log (logs.py line 328):
+    Successful preprocessor exit on <#4IzS:ENSO_RWS.wap> (='wap' @ 1mo).
+
+17:28:29 INFO: log (logs.py line 328):
+    Preprocessing <#4KV2:ENSO_RWS.pr> (='pr' @ 1mo).
+
+17:28:29 DEBUG: log (logs.py line 328):
+    Loaded '/Users/rneale/Documents/NCAR/git/throw_away/inputdata/model/CESM2/mon/CESM2.pr.mon.nc'.
+
+17:28:29 DEBUG: log (logs.py line 328):
+    Read 417 mb for <#4KV2:ENSO_RWS.pr>.
+
+17:28:29 DEBUG: log (logs.py line 328):
+    Updating units for 'time' to value 'days since 0001-01-01 00:00:00' from dataset.
+
+17:28:29 DEBUG: log (logs.py line 328):
+    Updating calendar for 'time' to value 'noleap' from dataset.
+
+17:28:29 INFO: log (logs.py line 328):
+    No standard_name for 'time_bnds' found in dataset; setting to 'time'.
+
+17:28:29 DEBUG: log (logs.py line 328):
+    Updating bounds for 'time' to value 'time_bnds' from dataset.
+
+17:28:29 INFO: log (logs.py line 328):
+    No standard_name for 'lat_bnds' found in dataset; setting to 'latitude'.
+
+17:28:29 DEBUG: log (logs.py line 328):
+    Updating bounds for 'lat' to value 'lat_bnds' from dataset.
+
+17:28:29 INFO: log (logs.py line 328):
+    No standard_name for 'lon_bnds' found in dataset; setting to 'longitude'.
+
+17:28:29 DEBUG: log (logs.py line 328):
+    Updating bounds for 'lon' to value 'lon_bnds' from dataset.
+
+17:28:30 DEBUG: log (logs.py line 328):
+    Calling CropDateRangeFunction on <#4KV2:ENSO_RWS.pr>.
+
+17:28:30 INFO: log (logs.py line 328):
+    Cropped date range of <#4KV2:ENSO_RWS.pr> from '1850-01-15 -- 2014-12-15' to '1950-01-15 -- 2005-12-15'.
+
+17:28:30 DEBUG: log (logs.py line 328):
+    Calling PrecipRateToFluxFunction on <#4KV2:ENSO_RWS.pr>.
+
+17:28:30 DEBUG: log (logs.py line 328):
+    Calling ConvertUnitsFunction on <#4KV2:ENSO_RWS.pr>.
+
+17:28:30 DEBUG: log (logs.py line 328):
+    Source, dest units of 'pr' (precipitation_flux) identical (kg m-2 s-1); no conversion done.
+
+17:28:30 DEBUG: log (logs.py line 328):
+    Source, dest units of 'lat' (latitude) identical (degrees_north); no conversion done.
+
+17:28:30 DEBUG: log (logs.py line 328):
+    Source, dest units of 'lat_bnds' (latitude) identical (degrees_north); no conversion done.
+
+17:28:30 DEBUG: log (logs.py line 328):
+    Source, dest units of 'lon' (longitude) identical (degrees_east); no conversion done.
+
+17:28:30 DEBUG: log (logs.py line 328):
+    Source, dest units of 'lon_bnds' (longitude) identical (degrees_east); no conversion done.
+
+17:28:30 INFO: log (logs.py line 328):
+    Converted units on <#4KV2:ENSO_RWS.pr>.
+
+17:28:30 DEBUG: log (logs.py line 328):
+    Calling ExtractLevelFunction on <#4KV2:ENSO_RWS.pr>.
+
+17:28:30 DEBUG: log (logs.py line 328):
+    Exit ExtractLevelFunction for <#4KV2:ENSO_RWS.pr>: no level requested.
+
+17:28:30 DEBUG: log (logs.py line 328):
+    Calling RenameVariablesFunction on <#4KV2:ENSO_RWS.pr>.
+
+17:28:30 INFO: log (logs.py line 328):
+    Writing 141 mb to $WK_DIR/ENSO_RWS/mon/CESM2.pr.mon.nc
+
+17:28:30 DEBUG: log (logs.py line 328):
+    Writing '/Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.pr.mon.nc'.
+
+17:28:35 DEBUG: log (logs.py line 328):
+    Successful preprocessor exit on <#4KV2:ENSO_RWS.pr> (='pr' @ 1mo).
+
+17:28:35 INFO: log (logs.py line 328):
+    Preprocessing <#4MX0:ENSO_RWS.ts> (='ts' @ 1mo).
+
+17:28:35 DEBUG: log (logs.py line 328):
+    Loaded '/Users/rneale/Documents/NCAR/git/throw_away/inputdata/model/CESM2/mon/CESM2.ts.mon.nc'.
+
+17:28:35 DEBUG: log (logs.py line 328):
+    Read 417 mb for <#4MX0:ENSO_RWS.ts>.
+
+17:28:35 DEBUG: log (logs.py line 328):
+    Updating units for 'time' to value 'days since 0001-01-01 00:00:00' from dataset.
+
+17:28:35 DEBUG: log (logs.py line 328):
+    Updating calendar for 'time' to value 'noleap' from dataset.
+
+17:28:35 INFO: log (logs.py line 328):
+    No standard_name for 'time_bnds' found in dataset; setting to 'time'.
+
+17:28:35 DEBUG: log (logs.py line 328):
+    Updating bounds for 'time' to value 'time_bnds' from dataset.
+
+17:28:35 INFO: log (logs.py line 328):
+    No standard_name for 'lat_bnds' found in dataset; setting to 'latitude'.
+
+17:28:35 DEBUG: log (logs.py line 328):
+    Updating bounds for 'lat' to value 'lat_bnds' from dataset.
+
+17:28:35 INFO: log (logs.py line 328):
+    No standard_name for 'lon_bnds' found in dataset; setting to 'longitude'.
+
+17:28:35 DEBUG: log (logs.py line 328):
+    Updating bounds for 'lon' to value 'lon_bnds' from dataset.
+
+17:28:35 DEBUG: log (logs.py line 328):
+    Calling CropDateRangeFunction on <#4MX0:ENSO_RWS.ts>.
+
+17:28:35 INFO: log (logs.py line 328):
+    Cropped date range of <#4MX0:ENSO_RWS.ts> from '1850-01-15 -- 2014-12-15' to '1950-01-15 -- 2005-12-15'.
+
+17:28:35 DEBUG: log (logs.py line 328):
+    Calling PrecipRateToFluxFunction on <#4MX0:ENSO_RWS.ts>.
+
+17:28:35 DEBUG: log (logs.py line 328):
+    Calling ConvertUnitsFunction on <#4MX0:ENSO_RWS.ts>.
+
+17:28:35 DEBUG: log (logs.py line 328):
+    Source, dest units of 'ts' (surface_temperature) identical (K); no conversion done.
+
+17:28:35 DEBUG: log (logs.py line 328):
+    Source, dest units of 'lat' (latitude) identical (degrees_north); no conversion done.
+
+17:28:35 DEBUG: log (logs.py line 328):
+    Source, dest units of 'lat_bnds' (latitude) identical (degrees_north); no conversion done.
+
+17:28:35 DEBUG: log (logs.py line 328):
+    Source, dest units of 'lon' (longitude) identical (degrees_east); no conversion done.
+
+17:28:35 DEBUG: log (logs.py line 328):
+    Source, dest units of 'lon_bnds' (longitude) identical (degrees_east); no conversion done.
+
+17:28:35 INFO: log (logs.py line 328):
+    Converted units on <#4MX0:ENSO_RWS.ts>.
+
+17:28:35 DEBUG: log (logs.py line 328):
+    Calling ExtractLevelFunction on <#4MX0:ENSO_RWS.ts>.
+
+17:28:35 DEBUG: log (logs.py line 328):
+    Exit ExtractLevelFunction for <#4MX0:ENSO_RWS.ts>: no level requested.
+
+17:28:35 DEBUG: log (logs.py line 328):
+    Calling RenameVariablesFunction on <#4MX0:ENSO_RWS.ts>.
+
+17:28:35 INFO: log (logs.py line 328):
+    Writing 141 mb to $WK_DIR/ENSO_RWS/mon/CESM2.ts.mon.nc
+
+17:28:35 DEBUG: log (logs.py line 328):
+    Writing '/Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/ENSO_RWS/mon/CESM2.ts.mon.nc'.
+
+17:28:40 DEBUG: log (logs.py line 328):
+    Successful preprocessor exit on <#4MX0:ENSO_RWS.ts> (='ts' @ 1mo).
+
+17:28:40 DEBUG: log (logs.py line 328):
+    Data request for <#4AMY:ENSO_RWS.zg> completed succesfully.
+
+17:28:40 DEBUG: log (logs.py line 328):
+    Data request for <#4CWG:ENSO_RWS.ua> completed succesfully.
+
+17:28:40 DEBUG: log (logs.py line 328):
+    Data request for <#4EK0:ENSO_RWS.va> completed succesfully.
+
+17:28:40 DEBUG: log (logs.py line 328):
+    Data request for <#4GLW:ENSO_RWS.ta> completed succesfully.
+
+17:28:40 DEBUG: log (logs.py line 328):
+    Data request for <#4IzS:ENSO_RWS.wap> completed succesfully.
+
+17:28:40 DEBUG: log (logs.py line 328):
+    Data request for <#4KV2:ENSO_RWS.pr> completed succesfully.
+
+17:28:40 DEBUG: log (logs.py line 328):
+    Data request for <#4MX0:ENSO_RWS.ts> completed succesfully.
+
+17:28:40 DEBUG: log (logs.py line 328):
+    Data request for <#4w4I:CESM2.ENSO_RWS> completed succesfully.
+
+17:28:40 INFO: log (logs.py line 328):
+    SubprocessRuntimeManager: run <#4w4I:CESM2.ENSO_RWS>.
+
+17:28:40 INFO: log (logs.py line 328):
+    ### Starting <#4w4I:CESM2.ENSO_RWS>
+
+17:28:40 INFO: log (logs.py line 328):
+    <#4w4I:CESM2.ENSO_RWS> will run using 'python' from conda env '_MDTF_ENSO_RWS'.
+
+17:28:40 INFO: log (logs.py line 328):
+    	Running ENSO_RWS.py for <#4w4I:CESM2.ENSO_RWS>.
+
+17:38:58 INFO: log (logs.py line 328):
+    <#4w4I:CESM2.ENSO_RWS> was terminated or exited abnormally.
+
+17:38:58 INFO: log (logs.py line 328):
+    SubprocessRuntimeManager: completed all PODs.
+
+17:39:19 INFO: log (logs.py line 328):
+    Checking linked output files for <#4w4I:CESM2.ENSO_RWS>.
+
+17:39:19 ERROR: log (logs.py line 328):
+    Missing '$WK_DIR/ENSO_RWS/obs/ts_LANINA.png'.
+
+17:39:19 ERROR: log (logs.py line 328):
+    Missing '$WK_DIR/ENSO_RWS/obs/pr_LANINA.png'.
+
+17:39:19 ERROR: log (logs.py line 328):
+    Missing '$WK_DIR/ENSO_RWS/obs/RR_adiv_aUVdiv_LANINA_200.png'.
+
+17:39:19 ERROR: log (logs.py line 328):
+    Deactivated <#4w4I:CESM2.ENSO_RWS> due to MDTFFileNotFoundError("[Errno 2] No such file or directory: 'Missing 3 files.'").
+
+17:39:19 ERROR: log (logs.py line 328):
+    Deactivated <#0udK:CESM2> due to ChildFailureEvent("Deactivating <#0udK:CESM2> due to failure of all child objects.").
+
+17:39:19 DEBUG: log (logs.py line 328):
+    Writing file /Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005/config_save.json
+
+17:43:14 DEBUG: log (logs.py line 328):
+    <#0udK:CESM2>: Copy '/Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_work/MDTF_CESM2_1950_2005' to '/Users/rneale/Documents/NCAR/git/throw_away/wkdir_rws_out/MDTF_CESM2_1950_2005'.
+
